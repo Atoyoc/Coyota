@@ -47,6 +47,9 @@ La aplicación tiene diferentes secciones:
 
 ## `Notas de Releases`
 
+### v.0.6.2 - Julio 2026
+- (_Actualización menor_) **Coyota Vehicle Manager** se llama ahora **Coyota**
+
 ### v.0.6.1 - Julio 2026
 - Pruebas realizadas sobre **Windows 11**, **macOS Catalina Intel**, y **macOS Tahoe ARM (Apple Silicon) M2** para confirma el correcto funcionamiento de las funcionalidades, y la presentación
 - En **macOS Catalina**, **WKWebView** es muy antiguo y obsoleto, y afecta en la presentación _CSS_. El coste de implementar personalizaciones sobre _Intel_ requiere reescribir y personalizar gran parte de la aplicación. Por esta razón, se descarta la distribución de **Coyota** en **macOS Intel**
