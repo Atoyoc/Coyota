@@ -1,6 +1,6 @@
 ![](assets/images/toyota_logo_200px.png) ![](assets/images/coyota_200px.png)
 
-[![](https://img.shields.io/badge/Coyota%20Vehicle%20Manager%20v0.6.1-cc5a5a?style=for-the-badge)](https://github.com/Atoyoc/Coyota_Vehicle_Manager/releases/tag/v0.6.1)
+[![](https://img.shields.io/badge/Coyota%20v0.6.1-cc5a5a?style=for-the-badge)](https://github.com/Atoyoc/Coyota/releases/tag/v0.6.1)
 ---
 
 > [!IMPORTANT]
