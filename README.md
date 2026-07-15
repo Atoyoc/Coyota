@@ -54,6 +54,7 @@ La aplicación tiene diferentes secciones:
 - En la sección **Información**, _Etiqueta_ se muestra ahora como _Etiqueta Medioambiental_.
 - Dentro de la sección **Mantenimientos**, y concretamente en el apartado _Historial de Servicio_, aparece ahora una lista desplegable de _Categorías_ para que el usuario filtre los datos por todas las categorías (_valor por defecto_) o por una categoría concreta.
 - Ahora, cuando el usuario sitúa el puntero del ratón sobre el _VIN_ que aparece a la derecha de la ventana en la barra superior de opciones, aparece la imagen del coche y la matrícula para identificar el vehículo activo.
+- Los botones de _sincronización_ de **Mis Vehiculos** y **Viajes** han sido sustituidos por el botón **Sincronizar** de la barra de opciones.
 
 ### v.0.7.1 - Julio 2026
 - Añadido soporte para crear el paquete de instalación para **Linux (Ubuntu/Debian)**.
