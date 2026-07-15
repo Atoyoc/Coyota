@@ -47,6 +47,12 @@ La aplicación tiene diferentes secciones:
 
 ## `Notas de Releases`
 
+### v.0.7.1 - Julio 2026
+- Añadido soporte para crear el paquete de instalación para **Linux (Ubuntu/Debian)**.
+
+### v.0.7.0 - Julio 2026
+- _Coyota Vehicle Manager_ se llama ahora **Coyota**.
+
 ### v.0.6.2 - Julio 2026
 - (_Actualización menor_) **Coyota Vehicle Manager** se llama ahora **Coyota**
 
@@ -102,7 +108,7 @@ La aplicación tiene diferentes secciones:
 
 ### v.0.1.0 - Marzo 2026
 - Primera versión funcional Beta de **Coyota Vehicle Manager**
-- Autenticación con cuenta **My Toyota** (_ForgeRock_)
+- Autenticación con cuenta **My Toyota** (_OAuth/ForgeRock de varios pasos_) [autenticación → autorización → obtención del token de usuario]
 - **Dashboard** con estado del vehículo, ubicación y rendimiento mensual
 - Listado y sincronización de viajes con mapas de ruta
 - Gestión de repostajes con mapa de ubicaciones
