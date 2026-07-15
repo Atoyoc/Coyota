@@ -47,6 +47,14 @@ La aplicación tiene diferentes secciones:
 
 ## `Notas de Releases`
 
+### v.0.8.0 - Julio 2026
+- Las ventanas emergentes de la aplicación se pueden cerrar ahora no sólo con el botón _Cerrar_, sino también haciendo clic fuera de su área.
+- Al pulsar el botón **Cerrar sesión**, el usuario debe confirmar si realmente quiere cerrar la sesión, para evitar que se haga accidentalmente.
+- Dentro de la sección **Mis Vehículos**, aparece el listado de vehículos asociados a la cuenta de usuario. Cuando un vehículo está seleccionado, el puntero del ratón es el estándar, y cuando uno de los vehículos del listado no está seleccionado, el puntero cambia para que el usuario sepa también que no está activo o seleccionado.
+- En la sección **Información**, _Etiqueta_ se muestra ahora como _Etiqueta Medioambiental_.
+- Dentro de la sección **Mantenimientos**, y concretamente en el apartado _Historial de Servicio_, aparece ahora una lista desplegable de _Categorías_ para que el usuario filtre los datos por todas las categorías (_valor por defecto_) o por una categoría concreta.
+- Ahora, cuando el usuario sitúa el puntero del ratón sobre el _VIN_ que aparece a la derecha de la ventana en la barra superior de opciones, aparece la imagen del coche y la matrícula para identificar el vehículo activo.
+
 ### v.0.7.1 - Julio 2026
 - Añadido soporte para crear el paquete de instalación para **Linux (Ubuntu/Debian)**.
 
