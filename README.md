@@ -60,6 +60,7 @@ La aplicación tiene diferentes secciones:
 - Cuando el usuario accede sobre la sección **Mantenimientos** por primera vez, y el usuario no ha creado aún ningún taller, todos los talleres diferentes que aparezcan en el _Historial de Servicio_, se generarán automáticamente de forma básica.
 - Cuando el usuario accede sobre la sección **Mantenimientos** por primera vez, la aplicación generará una serie de valores por defecto para _Tipos_, _Tareas_ y _Acciones_.
 - Se ha creado una nueva sección llamada **Configuración**, para indicar la ruta en la que queremos que esté la  base de datosde la aplicación.
+- Mejoras visuales en lsa pantallas de _Tipos_, _Tareas_ y _Acciones_.
 
 ### v.0.7.1 - Julio 2026
 - Añadido soporte para crear el paquete de instalación para **Linux (Ubuntu/Debian)**.
