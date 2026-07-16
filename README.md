@@ -55,6 +55,7 @@ La aplicación tiene diferentes secciones:
 - Dentro de la sección **Mantenimientos**, y concretamente en el apartado _Historial de Servicio_, aparece ahora una lista desplegable de _Categorías_ para que el usuario filtre los datos por todas las categorías (_valor por defecto_) o por una categoría concreta.
 - Ahora, cuando el usuario sitúa el puntero del ratón sobre el _VIN_ que aparece a la derecha de la ventana en la barra superior de opciones, aparece la imagen del coche y la matrícula para identificar el vehículo activo.
 - Los botones de _sincronización_ de **Mis Vehiculos** y **Viajes** han sido sustituidos por el botón **Sincronizar** de la barra de opciones.
+- Si los litros consumidos en una distancia eran 0 litros porque sólo se ha circulado en eléctrico, ese dato no aparecía. Aunque aparece aunque su valor sea 0 litros.
 
 ### v.0.7.1 - Julio 2026
 - Añadido soporte para crear el paquete de instalación para **Linux (Ubuntu/Debian)**.
