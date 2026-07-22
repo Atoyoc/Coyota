@@ -47,20 +47,24 @@ La aplicación tiene diferentes secciones:
 
 ## `Notas de Releases`
 
-### v.0.8.0 - Julio 2026
-- Las ventanas emergentes de la aplicación se pueden cerrar ahora no sólo con el botón _Cerrar_, sino también haciendo clic fuera de su área.
+### v.1.0.0 - Agosto 2026
+- Se han añadido a los viajes, los **Comportamientos a la Conducción** del conductor en un trayecto concreto. Dentro del detalle de un viaje, se indica si hay comportamientos a la conducción o no, y cuántos. Y dentro del mapa, se podrá visualizar estos comportamientos y saber cuándo ocurrieron.
+- Las ventanas emergentes de la aplicación se pueden cerrar ahora no sólo con el botón *Cerrar*, sino también haciendo clic fuera de su área.
 - Al pulsar el botón **Cerrar sesión**, el usuario debe confirmar si realmente quiere cerrar la sesión, para evitar que se haga accidentalmente.
 - Dentro de la sección **Mis Vehículos**, aparece el listado de vehículos asociados a la cuenta de usuario. Cuando un vehículo está seleccionado, el puntero del ratón es el estándar, y cuando uno de los vehículos del listado no está seleccionado, el puntero cambia para que el usuario sepa también que no está activo o seleccionado.
-- En la sección **Información**, _Etiqueta_ se muestra ahora como _Etiqueta Medioambiental_.
-- Dentro de la sección **Mantenimientos**, y concretamente en el apartado _Historial de Servicio_, aparece ahora una lista desplegable de _Categorías_ para que el usuario filtre los datos por todas las categorías (_valor por defecto_) o por una categoría concreta.
-- Ahora, cuando el usuario sitúa el puntero del ratón sobre el _VIN_ que aparece a la derecha de la ventana en la barra superior de opciones, aparece la imagen del coche y la matrícula para identificar el vehículo activo.
-- Los botones de _sincronización_ de **Mis Vehiculos** y **Viajes** han sido sustituidos por el botón **Sincronizar** de la barra de opciones.
+- En la sección **Información**, *Etiqueta* se muestra ahora como *Etiqueta Medioambiental*.
+- Dentro de la sección **Mantenimientos**, y concretamente en el apartado *Historial de Servicio*, aparece ahora una lista desplegable de *Categorías* para que el usuario filtre los datos por todas las categorías (valor por defecto) o por una categoría concreta.
+- Ahora, cuando el usuario sitúa el puntero del ratón sobre el *VIN* que aparece a la derecha de la ventana en la barra superior de opciones, aparece la imagen del coche y la matrícula para identificar el vehículo activo.
+- Los botones de *sincronización* de **Mis Vehiculos** y **Viajes** han sido sustituidos por el botón **Sincronizar** de la barra de opciones.
 - Si los litros consumidos en una distancia eran 0 litros porque sólo se ha circulado en eléctrico, ese dato no aparecía. Aunque aparece aunque su valor sea 0 litros.
-- Dentro de la sección **Mantenimientos**, todos los registros de _Talleres_, _Tipos_, _Tareas_ y _Addiones_, aparecen ahora ordenados albabéticamente.
-- Cuando el usuario accede sobre la sección **Mantenimientos** por primera vez, y el usuario no ha creado aún ningún taller, todos los talleres diferentes que aparezcan en el _Historial de Servicio_, se generarán automáticamente de forma básica.
-- Cuando el usuario accede sobre la sección **Mantenimientos** por primera vez, la aplicación generará una serie de valores por defecto para _Tipos_, _Tareas_ y _Acciones_.
-- Se ha creado una nueva sección llamada **Configuración**, para indicar la ruta en la que queremos que esté la  base de datosde la aplicación.
-- Mejoras visuales en lsa pantallas de _Tipos_, _Tareas_ y _Acciones_.
+- Dentro de la sección **Mantenimientos**, todos los registros de *Talleres*, *Tipos*, *Tareas* y *Addiones*, aparecen ahora ordenados albabéticamente.
+- Cuando el usuario accede sobre la sección **Mantenimientos** por primera vez, y el usuario no ha creado aún ningún taller, todos los talleres diferentes que aparezcan en el *Historial de Servicio*, se generarán automáticamente de forma básica.
+- Cuando el usuario accede sobre la sección **Mantenimientos** por primera vez, la aplicación generará una serie de valores por defecto para *Tipos*, *Tareas* y *Acciones*.
+- Se ha creado una nueva sección llamada <srtong>Configuración</srtong>.
+- Dentro de **Configuración** se podrá indicar la ruta en la que queremos que esté la base de datosde la aplicación.
+- Dentro de **Configuración** se podrá ejecutar una *Sincronización Completa* nuevamente, para que la aplicación actualice y descargue los viajes nuevamente.
+- Mejoras visuales en la selección de un viaje de su listado, y de un viaje seleccionado.
+- Mejoras visuales en las pantallas de *Tipos*, *Tareas* y *Acciones*.
 
 ### v.0.7.1 - Julio 2026
 - Añadido soporte para crear el paquete de instalación para **Linux (Ubuntu/Debian)**.
