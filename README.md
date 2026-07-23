@@ -66,6 +66,7 @@ La aplicación tiene diferentes secciones:
 - Dentro de **Configuración** se podrá ejecutar una *Sincronización Completa* nuevamente, para que la aplicación actualice y descargue los viajes nuevamente.
 - Mejoras visuales en la selección de un viaje de su listado, y de un viaje seleccionado.
 - Mejoras visuales en las pantallas de *Tipos*, *Tareas* y *Acciones*.
+- La aplicación ahora, aparece maximizada por defecto.
 
 ### v.0.7.1 - Julio 2026
 - Añadido soporte para crear el paquete de instalación para **Linux (Ubuntu/Debian)**.
