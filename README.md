@@ -67,6 +67,8 @@ La aplicación tiene diferentes secciones:
 - Mejoras visuales en la selección de un viaje de su listado, y de un viaje seleccionado.
 - Mejoras visuales en las pantallas de *Tipos*, *Tareas* y *Acciones*.
 - La aplicación ahora, aparece maximizada por defecto.
+- A la hora de crear un **Nuevo repostaje** o editar uno existente, el *Tipo de Combustible* aparece ahora ordenado alfabéticamente.
+- Arreglado un `bug` por el cuál cuando se editaba un repostaje existente, el título era erróneamente **Nuevo repostaje** en lugar de **Editar repostaje**.
 
 ### v.0.7.1 - Julio 2026
 - Añadido soporte para crear el paquete de instalación para **Linux (Ubuntu/Debian)**.
