@@ -47,28 +47,28 @@ La aplicación tiene diferentes secciones:
 
 ## `Notas de Releases`
 
-### v.1.0.0 - Agosto 2026
-- Se han añadido a los viajes, los **Comportamientos a la Conducción** del conductor en un trayecto concreto. Dentro del detalle de un viaje, se indica si hay comportamientos a la conducción o no, y cuántos. Y dentro del mapa, se podrá visualizar estos comportamientos y saber cuándo ocurrieron.
-- Se han añadido a los viajes, la posibilidad de mostrar parte de la ruta en **EV** y en **Combustión** de acuerdo a los datos devueltos por Toyota en cada punto registrado de la ruta.
-- Las ventanas emergentes de la aplicación se pueden cerrar ahora no sólo con el botón *Cerrar*, sino también haciendo clic fuera de su área.
-- Al pulsar el botón **Cerrar sesión**, el usuario debe confirmar si realmente quiere cerrar la sesión, para evitar que se haga accidentalmente.
-- Dentro de la sección **Mis Vehículos**, aparece el listado de vehículos asociados a la cuenta de usuario. Cuando un vehículo está seleccionado, el puntero del ratón es el estándar, y cuando uno de los vehículos del listado no está seleccionado, el puntero cambia para que el usuario sepa también que no está activo o seleccionado.
-- En la sección **Información**, *Etiqueta* se muestra ahora como *Etiqueta Medioambiental*.
-- Dentro de la sección **Mantenimientos**, y concretamente en el apartado *Historial de Servicio*, aparece ahora una lista desplegable de *Categorías* para que el usuario filtre los datos por todas las categorías (valor por defecto) o por una categoría concreta.
-- Ahora, cuando el usuario sitúa el puntero del ratón sobre el *VIN* que aparece a la derecha de la ventana en la barra superior de opciones, aparece la imagen del coche y la matrícula para identificar el vehículo activo.
-- Los botones de *sincronización* de **Mis Vehiculos** y **Viajes** han sido sustituidos por el botón **Sincronizar** de la barra de opciones.
-- Si los litros consumidos en una distancia eran 0 litros porque sólo se ha circulado en eléctrico, ese dato no aparecía. Aunque aparece aunque su valor sea 0 litros.
-- Dentro de la sección **Mantenimientos**, todos los registros de *Talleres*, *Tipos*, *Tareas* y *Addiones*, aparecen ahora ordenados albabéticamente.
-- Cuando el usuario accede sobre la sección **Mantenimientos** por primera vez, y el usuario no ha creado aún ningún taller, todos los talleres diferentes que aparezcan en el *Historial de Servicio*, se generarán automáticamente de forma básica.
-- Cuando el usuario accede sobre la sección **Mantenimientos** por primera vez, la aplicación generará una serie de valores por defecto para *Tipos*, *Tareas* y *Acciones*.
-- Se ha creado una nueva sección llamada <srtong>Configuración</srtong>.
-- Dentro de **Configuración** se podrá indicar la ruta en la que queremos que esté la base de datosde la aplicación.
-- Dentro de **Configuración** se podrá ejecutar una *Sincronización Completa* nuevamente, para que la aplicación actualice y descargue los viajes nuevamente.
-- Mejoras visuales en la selección de un viaje de su listado, y de un viaje seleccionado.
-- Mejoras visuales en las pantallas de *Tipos*, *Tareas* y *Acciones*.
-- La aplicación ahora, aparece maximizada por defecto.
-- A la hora de crear un **Nuevo repostaje** o editar uno existente, el *Tipo de Combustible* aparece ahora ordenado alfabéticamente.
-- Arreglado un `bug` por el cuál cuando se editaba un repostaje existente, el título era erróneamente **Nuevo repostaje** en lugar de **Editar repostaje**.
+### v.1.0.0.260724 - Agosto 2026
+- ![](https://img.shields.io/badge/Nuevo-22c55e?style=for-the-badge) Se han añadido a los viajes, los **Comportamientos a la Conducción** del conductor en un trayecto concreto. Dentro del detalle de un viaje, se indica si hay comportamientos a la conducción o no, y cuántos. Y dentro del mapa, se podrá visualizar estos comportamientos y saber cuándo ocurrieron.
+- ![](https://img.shields.io/badge/Nuevo-22c55e?style=for-the-badge) Se han añadido a los viajes, la posibilidad de mostrar parte de la ruta en **EV** y en **Combustión** de acuerdo a los datos devueltos por Toyota en cada punto registrado de la ruta.
+- ![](https://img.shields.io/badge/Nuevo-22c55e?style=for-the-badge) Al pulsar el botón **Cerrar sesión**, el usuario debe confirmar si realmente quiere cerrar la sesión, para evitar que se haga accidentalmente.
+- ![](https://img.shields.io/badge/Nuevo-22c55e?style=for-the-badge) Dentro de la sección **Mantenimientos**, y concretamente en el apartado *Historial de Servicio*, aparece ahora una lista desplegable de *Categorías* para que el usuario filtre los datos por todas las categorías (valor por defecto) o por una categoría concreta.
+- ![](https://img.shields.io/badge/Nuevo-22c55e?style=for-the-badge) Ahora, cuando el usuario sitúa el puntero del ratón sobre el *VIN* que aparece a la derecha de la ventana en la barra superior de opciones, aparece la imagen del coche y la matrícula para identificar el vehículo activo.
+- ![](https://img.shields.io/badge/Nuevo-22c55e?style=for-the-badge) Los botones de *sincronización* de **Mis Vehiculos** y **Viajes** han sido sustituidos por el botón **Sincronizar** de la barra de opciones.
+- ![](https://img.shields.io/badge/Nuevo-22c55e?style=for-the-badge) Cuando el usuario accede sobre la sección **Mantenimientos** por primera vez, y el usuario no ha creado aún ningún taller, todos los talleres diferentes que aparezcan en el *Historial de Servicio*, se generarán automáticamente de forma básica.
+- ![](https://img.shields.io/badge/Nuevo-22c55e?style=for-the-badge) Cuando el usuario accede sobre la sección **Mantenimientos** por primera vez, la aplicación generará una serie de valores por defecto para *Tipos*, *Tareas* y *Acciones*.
+- ![](https://img.shields.io/badge/Nuevo-22c55e?style=for-the-badge) Se ha creado una nueva sección llamada <srtong>Configuración</srtong>.
+- ![](https://img.shields.io/badge/Nuevo-22c55e?style=for-the-badge) Dentro de **Configuración** se podrá indicar la ruta en la que queremos que esté la base de datosde la aplicación.
+- ![](https://img.shields.io/badge/Nuevo-22c55e?style=for-the-badge) Dentro de **Configuración** se podrá ejecutar una *Sincronización Completa* nuevamente, para que la aplicación actualice y descargue los viajes nuevamente.
+- ![](https://img.shields.io/badge/Mejora-29568a?style=for-the-badge) Las ventanas emergentes de la aplicación se pueden cerrar ahora no sólo con el botón *Cerrar*, sino también haciendo clic fuera de su área.
+- ![](https://img.shields.io/badge/Mejora-29568a?style=for-the-badge) Dentro de la sección **Mis Vehículos**, aparece el listado de vehículos asociados a la cuenta de usuario. Cuando un vehículo está seleccionado, el puntero del ratón es el estándar, y cuando uno de los vehículos del listado no está seleccionado, el puntero cambia para que el usuario sepa también que no está activo o seleccionado.
+- ![](https://img.shields.io/badge/Mejora-29568a?style=for-the-badge) En la sección **Información**, *Etiqueta* se muestra ahora como *Etiqueta Medioambiental*.
+- ![](https://img.shields.io/badge/Mejora-29568a?style=for-the-badge) Si los litros consumidos en una distancia eran 0 litros porque sólo se ha circulado en eléctrico, ese dato no aparecía. Aunque aparece aunque su valor sea 0 litros.
+- ![](https://img.shields.io/badge/Mejora-29568a?style=for-the-badge) Dentro de la sección **Mantenimientos**, todos los registros de *Talleres*, *Tipos*, *Tareas* y *Addiones*, aparecen ahora ordenados albabéticamente.
+- ![](https://img.shields.io/badge/Mejora-29568a?style=for-the-badge) Mejoras visuales en la selección de un viaje de su listado, y de un viaje seleccionado.
+- ![](https://img.shields.io/badge/Mejora-29568a?style=for-the-badge) Mejoras visuales en las pantallas de *Tipos*, *Tareas* y *Acciones*.
+- ![](https://img.shields.io/badge/Mejora-29568a?style=for-the-badge) La aplicación ahora, aparece maximizada por defecto.
+- ![](https://img.shields.io/badge/Issue-fcd34d?style=for-the-badge) A la hora de crear un **Nuevo repostaje** o editar uno existente, el *Tipo de Combustible* aparece ahora ordenado alfabéticamente.
+- ![](https://img.shields.io/badge/Bug-cc5a5a?style=for-the-badge) Arreglado un `bug` por el cuál cuando se editaba un repostaje existente, el título era erróneamente **Nuevo repostaje** en lugar de **Editar repostaje**.
 
 ### v.0.7.1 - Julio 2026
 - Añadido soporte para crear el paquete de instalación para **Linux (Ubuntu/Debian)**.
