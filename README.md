@@ -49,7 +49,7 @@ La aplicación tiene diferentes secciones:
 - [Histórico de Versiones](old_releases.md)
 
 ### *Versión Actual* - v.1.0.0.260725
-[![](https://img.shields.io/badge/Coyota%20v1.0.0.260725-cc5a5a?style=for-the-badge)](https://github.com/Atoyoc/Coyota/releases/tag/v1.0.0.260725)
+[![](https://img.shields.io/badge/Versión%20Actual%20-%20Coyota%20v1.0.0.260725-cc5a5a?style=for-the-badge)](https://github.com/Atoyoc/Coyota/releases/tag/v1.0.0.260725)
 
 - ![](https://img.shields.io/badge/Nuevo-22c55e?style=for-the-badge) Se han añadido a los viajes, los **Comportamientos a la Conducción** del conductor en un trayecto concreto. Dentro del detalle de un viaje, se indica si hay comportamientos a la conducción o no, y cuántos. Y dentro del mapa, se podrá visualizar estos comportamientos y saber cuándo ocurrieron.
 - ![](https://img.shields.io/badge/Nuevo-22c55e?style=for-the-badge) Se han añadido a los viajes, la posibilidad de mostrar parte de la ruta en **EV** y en **Combustión** de acuerdo a los datos devueltos por Toyota en cada punto registrado de la ruta.
