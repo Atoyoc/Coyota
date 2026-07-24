@@ -48,7 +48,7 @@ La aplicación tiene diferentes secciones:
 ## `Notas de Releases`
 - [Histórico de Versiones](old_releases.md)
 
-### v.1.0.0.260724 - Agosto 2026
+### *Versión Actual* - v.1.0.0.260724 - Agosto 2026
 - ![](https://img.shields.io/badge/Nuevo-22c55e?style=for-the-badge) Se han añadido a los viajes, los **Comportamientos a la Conducción** del conductor en un trayecto concreto. Dentro del detalle de un viaje, se indica si hay comportamientos a la conducción o no, y cuántos. Y dentro del mapa, se podrá visualizar estos comportamientos y saber cuándo ocurrieron.
 - ![](https://img.shields.io/badge/Nuevo-22c55e?style=for-the-badge) Se han añadido a los viajes, la posibilidad de mostrar parte de la ruta en **EV** y en **Combustión** de acuerdo a los datos devueltos por Toyota en cada punto registrado de la ruta.
 - ![](https://img.shields.io/badge/Nuevo-22c55e?style=for-the-badge) Al pulsar el botón **Cerrar sesión**, el usuario debe confirmar si realmente quiere cerrar la sesión, para evitar que se haga accidentalmente.
