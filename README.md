@@ -2,7 +2,7 @@
 
 ![](https://img.shields.io/badge/Windows-2d8cff?style=for-the-badge&logo=windows&logoColor=black) ![](https://img.shields.io/badge/macOS-A3AAAE?style=for-the-badge&logo=apple&logoColor=black) ![](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
-[![](https://img.shields.io/badge/Versión%20Actual%20-%20Coyota%20v1.0.0.260725-cc5a5a?style=for-the-badge)](https://github.com/Atoyoc/Coyota/releases/tag/v1.0.0.260725) [![](https://img.shields.io/badge/Notas%20de%20la%20Versión-add16a?style=for-the-badge)](#3d_vr_irl)
+[![](https://img.shields.io/badge/Versión%20Actual%20-%20Coyota%20v1.0.0.260725-cc5a5a?style=for-the-badge)](https://github.com/Atoyoc/Coyota/releases/tag/v1.0.0.260725) [![](https://img.shields.io/badge/Notas%20de%20la%20Versión-add16a?style=for-the-badge)](#release_notes)
 
 
 ![](assets/images/coyota_app_01.png)
