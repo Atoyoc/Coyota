@@ -1,7 +1,5 @@
 ![](assets/images/toyota_logo_200px.png) ![](assets/images/coyota_200px.png)
 
-![](https://img.shields.io/badge/Windows-2d8cff?style=for-the-badge&logo=windows&logoColor=black) ![](https://img.shields.io/badge/macOS-A3AAAE?style=for-the-badge&logo=apple&logoColor=black) ![](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-
 [![](https://img.shields.io/badge/Versión%20Actual%20-%20Coyota%20v1.0.0.260725-cc5a5a?style=for-the-badge)](https://github.com/Atoyoc/Coyota/releases/tag/v1.0.0.260725) [![](https://img.shields.io/badge/Notas%20de%20la%20Versión-add16a?style=for-the-badge)](#release_notes)
 
 
@@ -50,6 +48,8 @@ La aplicación tiene diferentes secciones:
 
 ## <a name="release_notes"></a>`Notas de Releases`
 - [Histórico de Versiones](old_releases.md)
+
+![](https://img.shields.io/badge/Windows-2d8cff?style=for-the-badge&logo=windows&logoColor=black) ![](https://img.shields.io/badge/macOS-A3AAAE?style=for-the-badge&logo=apple&logoColor=black) ![](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
 [![](https://img.shields.io/badge/Versión%20Actual%20-%20Coyota%20v1.0.0.260725-cc5a5a?style=for-the-badge)](https://github.com/Atoyoc/Coyota/releases/tag/v1.0.0.260725)
 
