@@ -1,6 +1,9 @@
 ![](assets/images/toyota_logo_200px.png) ![](assets/images/coyota_200px.png)
 
+![](https://img.shields.io/badge/Windows-2d8cff?style=for-the-badge&logo=windows&logoColor=black) ![](https://img.shields.io/badge/macOS-A3AAAE?style=for-the-badge&logo=apple&logoColor=black) ![](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+
 [![](https://img.shields.io/badge/Versión%20Actual%20-%20Coyota%20v1.0.0.260725-cc5a5a?style=for-the-badge)](https://github.com/Atoyoc/Coyota/releases/tag/v1.0.0.260725)
+
 
 ![](assets/images/coyota_app_01.png)
 ---
