@@ -1,3 +1,5 @@
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/E1C721AABH)
+
 ![](assets/images/toyota_logo_200px.png) ![](assets/images/coyota_200px.png)
 
 [![](https://img.shields.io/badge/Versión%20Actual%20-%20Coyota%20v1.2.0-cc5a5a?style=for-the-badge)](https://github.com/Atoyoc/Coyota/releases/tag/v1.2.0) [![](https://img.shields.io/badge/Notas%20de%20la%20Versión-add16a?style=for-the-badge)](#release_notes)
