@@ -2,7 +2,7 @@
 
 ![](assets/images/toyota_logo_200px.png) ![](assets/images/coyota_200px.png)
 
-[![](https://img.shields.io/badge/Versión%20Actual%20-%20Coyota%20v1.2.0-cc5a5a?style=for-the-badge)](https://github.com/Atoyoc/Coyota/releases/tag/v1.2.0) [![](https://img.shields.io/badge/Notas%20de%20la%20Versión-add16a?style=for-the-badge)](#release_notes)
+[![](https://img.shields.io/badge/Versión%20Actual%20-%20Coyota%20v1.3.0-cc5a5a?style=for-the-badge)](https://github.com/Atoyoc/Coyota/releases/tag/v1.3.0) [![](https://img.shields.io/badge/Notas%20de%20la%20Versión-add16a?style=for-the-badge)](#release_notes)
 
 
 ![](assets/images/coyota_app_01.png)
@@ -53,20 +53,13 @@ La aplicación tiene diferentes secciones:
 
 ![](https://img.shields.io/badge/Windows-2d8cff?style=for-the-badge&logo=windows&logoColor=black) ![](https://img.shields.io/badge/macOS-A3AAAE?style=for-the-badge&logo=apple&logoColor=black) ![](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
-[![](https://img.shields.io/badge/Versión%20Actual%20-%20Coyota%20v1.2.0-cc5a5a?style=for-the-badge)](https://github.com/Atoyoc/Coyota/releases/tag/v1.2.0)
+[![](https://img.shields.io/badge/Versión%20Actual%20-%20Coyota%20v1.3.0-cc5a5a?style=for-the-badge)](https://github.com/Atoyoc/Coyota/releases/tag/v1.3.0)
 
-- ![](https://img.shields.io/badge/Nuevo-22c55e?style=for-the-badge) Dentro de la sección **Configuración**, ahora es posible exportar e importar los repostajes de Coyota, pero también es posible importar los repostajes de la aplicación **Sprintmonitor**.
-- ![](https://img.shields.io/badge/Nuevo-22c55e?style=for-the-badge) Dentro de la sección **Información**, en el apartado **Personalización**, se puede ahora indicar el _Seguimiento de Fabricación_. Cada vez que un usuario adquiere un vehículo **Toyota**, entra dentro de un proceso que normalmente tarda varios meses, desde que se realiza el pedido, hasta que el vehículo llega al concesionario para ser entregado.
-- ![](https://img.shields.io/badge/Nuevo-22c55e?style=for-the-badge) Dentro de la sección **Información**, en el apartado **Personalización**, se puede indicar _Notas o comentarios adicionales sobre el vehículo_.
-- ![](https://img.shields.io/badge/Nuevo-22c55e?style=for-the-badge) Dentro de la sección **Información**, en el apartado **Personalización**, se pueden indicar los datos del **Seguro** o **Aseguradora**.
-- ![](https://img.shields.io/badge/Nuevo-22c55e?style=for-the-badge) Dentro de la sección **Información**, se ha creado un nuevo apartado llamado **Concesionario**, que se utiliza para agregar información adicional del concesionario en el que se adquirió el vehículo para tenerla a mano.
-- ![](https://img.shields.io/badge/Nuevo-22c55e?style=for-the-badge) Dentro de la sección **Repostajes**, _Precios ha cambiado a Estadísticas_.
-- ![](https://img.shields.io/badge/Nuevo-22c55e?style=for-the-badge) Dentro de la sección **Repostajes**, **Estadísticas**, ahora se puede sacar la gráfica de evolución de precios el litro como se hacía antes, pero también de litros repostados, y de gasto total en repostajes. Para ello, habrá una lista desplegable que nos facilite la estadística a seleccionar, siendo la de evolución de precios el litro la que aparece por defecto. También es posible seleccionar entre diferentes franjas de meses y años para filtrar los datos.
-- ![](https://img.shields.io/badge/Nuevo-22c55e?style=for-the-badge) Dentro de la sección **Viajes**, se ha agregado la posibilidad de filtras viajes por kilómetros realizados, ya sea superior o inferior a una distancia, o bien entre un rango de kilómetros. La aplicación de filtros es global, por lo que el filtrado de Viajes se puede hacer por _Últimos Viajes (o todos), Ditancia en Km, y/o Tags_.
-- ![](https://img.shields.io/badge/Nuevo-22c55e?style=for-the-badge) Dentro de la sección **Viajes**, **Estadísticas** ha cambiado a **Estadísticas Globales**, y se ha creado una nueva opción de **Estadísticas de Viajes Seleccionados** que a partir de los filtros aplicados, muestra estadísticas de uso para aprender sobre los hábitos en la conducción.
-- ![](https://img.shields.io/badge/Mejora-29568a?style=for-the-badge) Dentro de la ventana principal, en **Mis Vehículos**, los rangos de colores del próximo mantenimiento y reparación pendiente, han sido modificados para hacerlos más acordes a los tiempos reales y anticiparse aún más a cómo estaba configurado.
-- ![](https://img.shields.io/badge/Mejora-29568a?style=for-the-badge) Dentro de la sección **Información**, el _País de residencia y el Idioma_ aparecen ahora con la bandera que le corresponde si hay conexión a Internet.
-- ![](https://img.shields.io/badge/Mejora-29568a?style=for-the-badge) Dentro de la sección **Información**, en el apartado **Cuenta de Usuario**, se ha mejorado la disposición de los campos que aparecían ahí provenientes de **Toyota**.
+- ![](https://img.shields.io/badge/Nuevo-22c55e?style=for-the-badge) Desde esta versión, cuando exista una versión actualizada de **Coyota**, la aplicación avisará de ello al usuario.
+- ![](https://img.shields.io/badge/Nuevo-22c55e?style=for-the-badge) Dentro de la sección **Configuración**, ahora es posible exportar e importar los datos de **Información** correspondientes a _Concesionario_, _Aseguradora_ y _Seguimiento de fabricación del vehículo_.
+- ![](https://img.shields.io/badge/Mejora-29568a?style=for-the-badge) Al exportar datos desde **Configuración**, el fichero a exportar por defecto incluye el VIN del vehículo para relacionarlo rápidamente con el vehículo correcto en el caso de tener más de un vehículo vinculado a una cuenta.
+- ![](https://img.shields.io/badge/Mejora-29568a?style=for-the-badge) Dentro de la aplicación se han realizado pequeñas mejoras en algunos botones dentro de **Configuración**.
+- ![](https://img.shields.io/badge/Mejora-29568a?style=for-the-badge) En la sección **Información** se dispone la información de mejor forma para prestar la mejor experiencia de usuario.
 
 
 ## Enlaces que pueden ser de interés
