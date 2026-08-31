@@ -86,3 +86,6 @@ La aplicación tiene diferentes secciones:
 - [GitHub - ha_toyota (Toyota Europa - usa pytoyoda)](https://github.com/pytoyoda/ha_toyota/)
 - [GitHub - ha_toyota_na (Toyota Norteamérica - usa pytoyoda)](https://github.com/widewing/ha-toyota-na)
 - [GitHub - pytoyoda (Toyota Europa)](https://github.com/pytoyoda/pytoyoda)
+
+### Precio de carburantes en las gasolineras españolas
+- [datos.gob.es](https://datos.gob.es/es/catalogo/e05068001-precio-de-carburantes-en-las-gasolineras-espanolas)
