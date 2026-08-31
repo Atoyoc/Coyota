@@ -2,7 +2,7 @@
 
 ![](assets/images/toyota_logo_200px.png) ![](assets/images/coyota_200px.png)
 
-[![](https://img.shields.io/badge/Versión%20Actual%20-%20Coyota%20v1.3.0-cc5a5a?style=for-the-badge)](https://github.com/Atoyoc/Coyota/releases/tag/v1.3.0) [![](https://img.shields.io/badge/Notas%20de%20la%20Versión-add16a?style=for-the-badge)](#release_notes)
+[![](https://img.shields.io/badge/Versión%20Actual%20-%20Coyota%20v1.4.0-cc5a5a?style=for-the-badge)](https://github.com/Atoyoc/Coyota/releases/tag/v1.4.0) [![](https://img.shields.io/badge/Notas%20de%20la%20Versión-add16a?style=for-the-badge)](#release_notes)
 
 
 ![](assets/images/coyota_app_01.png)
@@ -53,7 +53,7 @@ La aplicación tiene diferentes secciones:
 
 ![](https://img.shields.io/badge/Windows-2d8cff?style=for-the-badge&logo=windows&logoColor=black) ![](https://img.shields.io/badge/macOS-A3AAAE?style=for-the-badge&logo=apple&logoColor=black) ![](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
-[![](https://img.shields.io/badge/Versión%20Actual%20-%20Coyota%20v1.3.0-cc5a5a?style=for-the-badge)](https://github.com/Atoyoc/Coyota/releases/tag/v1.3.0)
+[![](https://img.shields.io/badge/Versión%20Actual%20-%20Coyota%20v1.4.0-cc5a5a?style=for-the-badge)](https://github.com/Atoyoc/Coyota/releases/tag/v1.4.0)
 
 - ![](https://img.shields.io/badge/Nuevo-22c55e?style=for-the-badge) Desde esta versión, cuando exista una versión actualizada de **Coyota**, la aplicación avisará de ello al usuario.
 - ![](https://img.shields.io/badge/Nuevo-22c55e?style=for-the-badge) Dentro de la sección **Configuración**, ahora es posible exportar e importar los datos de **Información** correspondientes a _Concesionario_, _Aseguradora_ y _Seguimiento de fabricación del vehículo_.
