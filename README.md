@@ -67,6 +67,8 @@ La aplicación tiene diferentes secciones:
 
 ## Enlaces que pueden ser de interés
 
+[![](https://img.shields.io/badge/Notas%20de%20versiones%20anteriores-add16a?style=for-the-badge)](old_releases.md)
+
 ### Aplicaciones móviles oficiales Toyota
 - [Toyota - MyToyota App para Android](https://play.google.com/store/apps/details?id=com.toyota.oneapp.eu)
 - [Toyota - Mytoyota App para iOS](https://apps.apple.com/es/app/mytoyota/id1617623127)
