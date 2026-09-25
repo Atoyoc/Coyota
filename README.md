@@ -2,8 +2,7 @@
 
 ![](assets/images/toyota_logo_200px.png) ![](assets/images/coyota_200px.png)
 
-[![](https://img.shields.io/badge/Versión%20Actual%20-%20Coyota%20v1.5.0-cc5a5a?style=for-the-badge)](https://github.com/Atoyoc/Coyota/releases/tag/v1.5.0) [![](https://img.shields.io/badge/Notas%20de%20la%20Versión-add16a?style=for-the-badge)](#release_notes)
-
+[![Version](https://img.shields.io/badge/Versión%20Actual-1.5.0-cc5a5a)](https://github.com/Atoyoc/Coyota/releases/tag/v1.5.0) [![](https://img.shields.io/badge/Notas%20de%20la%20Versión-add16a)](#release_notes)
 
 ![](assets/images/coyota_app_01.png)
 ---
@@ -51,9 +50,11 @@ La aplicación tiene diferentes secciones:
 ## <a name="release_notes"></a>`Notas de Releases`
 - [Histórico de Versiones](old_releases.md)
 
-![](https://img.shields.io/badge/Windows-2d8cff?style=for-the-badge&logo=windows&logoColor=black) ![](https://img.shields.io/badge/macOS-A3AAAE?style=for-the-badge&logo=apple&logoColor=black) ![](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Rust](https://img.shields.io/badge/Rust-backend-b7410e?logo=rust&amp;logoColor=white) ![Tauri v2](https://img.shields.io/badge/Tauri-v2-24C8B8?logo=tauri&amp;logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-local%20only-0f80cc?logo=sqlite&amp;logoColor=white)
 
-[![](https://img.shields.io/badge/Versión%20Actual%20-%20Coyota%20v1.5.0-cc5a5a?style=for-the-badge)](https://github.com/Atoyoc/Coyota/releases/tag/v1.5.0)
+![macOS](https://img.shields.io/badge/macOS-Apple%20Silicon-0071e3?logo=apple&amp;logoColor=white) ![Windows](https://img.shields.io/badge/Windows-64%20bits-2d8cff?logo=windows&amp;logoColor=white) ![Linux](https://img.shields.io/badge/Linux-64%20bits-fcc624?logo=linux&amp;logoColor=white)
+
+![Version](https://img.shields.io/badge/Versión%20Actual-1.5.0-cc5a5a)
 
 - ![](https://img.shields.io/badge/Nuevo-22c55e?style=for-the-badge) **Viajes** - Agregada la funcionalidad de _Exportar_ tanto una _Ruta_ como una _Ruta con Detalle_. La exportación será en fichero .json, que podrá ser cargada con un visor que estará disponible en la página web de **Coyota**, para visualizar el contenido de forma local en un ordenador, tableta, etc. que soporte el formato HTML del visor (requiere conexión a Internet para una experiencia completa). [coyota-visor.html](https://github.com/Atoyoc/Coyota/releases/download/v1.5.0/coyota-visor.html)
 - ![](https://img.shields.io/badge/Mejora-29568a?style=for-the-badge) **Precios de carburantes** - La opción _Estadísticas_ que está dentro de **Repostajes**, también aparece ahora dentro de _Precios de carburantes_.
