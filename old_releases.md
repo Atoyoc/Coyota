@@ -4,7 +4,16 @@
 
 ## Histórico de Versiones de Coyota
 
-### v1.4.0
+![Version](https://img.shields.io/badge/Versión%20Actual-1.5.0-cc5a5a)
+
+- ![](https://img.shields.io/badge/Nuevo-22c55e) **Viajes** - Agregada la funcionalidad de _Exportar_ tanto una _Ruta_ como una _Ruta con Detalle_. La exportación será en fichero .json, que podrá ser cargada con un visor que estará disponible en la página web de **Coyota**, para visualizar el contenido de forma local en un ordenador, tableta, etc. que soporte el formato HTML del visor (requiere conexión a Internet para una experiencia completa). [coyota-visor.html](https://github.com/Atoyoc/Coyota/releases/download/v1.5.0/coyota-visor.html)
+- ![](https://img.shields.io/badge/Mejora-29568a) **Precios de carburantes** - La opción _Estadísticas_ que está dentro de **Repostajes**, también aparece ahora dentro de _Precios de carburantes_.
+- ![](https://img.shields.io/badge/Bug-cc5a5a) **Viajes** - Al elegír el filtro _Entre fechas..._ y seleccionar un rango de fechas, el filtro no actuaba, y sólo lo hacía al salir de esa parte de la aplicación y volver a entrar refrescando la acción.
+
+---
+
+![Version](https://img.shields.io/badge/Versión-v1.4.0-ccaa5a)
+
 - ![](https://img.shields.io/badge/Nuevo-22c55e) **Repostajes** - Agregada la posibilidad de agregar un descuento en un repostaje. Cuando se paga un repostaje, a veces es posible que se aplique un vale o descuento que nos permita pagar una parte del gasto de repostar, e incluso el repostaje completo. Con esta opción añadida, es posible indicar la parte que ha quedado cubierta en € (euros). Esto sirve para contabilizar las cantidades cubiertas indirectamente en el resumen de _Estadísticas Globales_.
 - ![](https://img.shields.io/badge/Nuevo-22c55e) **Repostajes** - Agregada una nueva opción llamada **Precios de carburantes**.
 - ![](https://img.shields.io/badge/Nuevo-22c55e) **Precios de carburantes** - Agregada una nueva funcionalidad para buscar el precio actual de los diferentes combustibles en toda España. Los datos son actualizados por **datos.gob.es** promovida por el _Ministerio para la Transformación Digital y de la Función Pública_. **Coyota** permitirá conectarnos a esa fuente de datos para recoger y actualizar los datos para una consulta directa dentro de la aplicación. La actualización se realiza bajo demanda, así que el usuario debe pulsar el botón de actualización para actualizar este contenido.
@@ -14,14 +23,20 @@
 - ![](https://img.shields.io/badge/Nuevo-22c55e) **Ofertas** - En esta sección, se podrá filtrar y buscar las ofertas vigentes existentes de acuerdo a la información devuelta en **datos.gob.es**.
 - ![](https://img.shields.io/badge/Nuevo-22c55e) **Configuración** - Por defecto, aparecerá habilitada una lista de carburantes (_Gasolina 95 y Gasolina 98_). El usuario podrá indicar en **Configuración** qué carburantes quiere que aparezcan a la hora de buscar los precios de carburantes en las gasolineras de toda España.
 
-### v1.3.0
+--- 
+
+![Version](https://img.shields.io/badge/Versión-v1.3.0-ccaa5a)
+
 - ![](https://img.shields.io/badge/Nuevo-22c55e) Desde esta versión, cuando exista una versión actualizada de **Coyota**, la aplicación avisará de ello al usuario.
 - ![](https://img.shields.io/badge/Nuevo-22c55e) Dentro de la sección **Configuración**, ahora es posible exportar e importar los datos de **Información** correspondientes a _Concesionario_, _Aseguradora_ y _Seguimiento de fabricación del vehículo_.
 - ![](https://img.shields.io/badge/Mejora-29568a) Al exportar datos desde **Configuración**, el fichero a exportar por defecto incluye el VIN del vehículo para relacionarlo rápidamente con el vehículo correcto en el caso de tener más de un vehículo vinculado a una cuenta.
 - ![](https://img.shields.io/badge/Mejora-29568a) Dentro de la aplicación se han realizado pequeñas mejoras en algunos botones dentro de **Configuración**.
 - ![](https://img.shields.io/badge/Mejora-29568a) En la sección **Información** se dispone la información de mejor forma para prestar la mejor experiencia de usuario.
 
-### v1.2.0
+---
+
+![Version](https://img.shields.io/badge/Versión-v1.2.0-ccaa5a)
+
 - ![](https://img.shields.io/badge/Nuevo-22c55e) Dentro de la sección **Configuración**, ahora es posible exportar e importar los repostajes de Coyota, pero también es posible importar los repostajes de la aplicación **Sprintmonitor**.
 - ![](https://img.shields.io/badge/Nuevo-22c55e) Dentro de la sección **Información**, en el apartado **Personalización**, se puede ahora indicar el _Seguimiento de Fabricación_. Cada vez que un usuario adquiere un vehículo **Toyota**, entra dentro de un proceso que normalmente tarda varios meses, desde que se realiza el pedido, hasta que el vehículo llega al concesionario para ser entregado.
 - ![](https://img.shields.io/badge/Nuevo-22c55e) Dentro de la sección **Información**, en el apartado **Personalización**, se puede indicar _Notas o comentarios adicionales sobre el vehículo_.
@@ -35,7 +50,10 @@
 - ![](https://img.shields.io/badge/Mejora-29568a) Dentro de la sección **Información**, el _País de residencia y el Idioma_ aparecen ahora con la bandera que le corresponde si hay conexión a Internet.
 - ![](https://img.shields.io/badge/Mejora-29568a) Dentro de la sección **Información**, en el apartado **Cuenta de Usuario**, se ha mejorado la disposición de los campos que aparecían ahí provenientes de **Toyota**.
 
-### v1.0.0.260725
+---
+
+![Version](https://img.shields.io/badge/Versión-v1.0.0.260725-ccaa5a)
+
 - ![](https://img.shields.io/badge/Nuevo-22c55e) Se han añadido a los viajes, los **Comportamientos a la Conducción** del conductor en un trayecto concreto. Dentro del detalle de un viaje, se indica si hay comportamientos a la conducción o no, y cuántos. Y dentro del mapa, se podrá visualizar estos comportamientos y saber cuándo ocurrieron.
 - ![](https://img.shields.io/badge/Nuevo-22c55e) Se han añadido a los viajes, la posibilidad de mostrar parte de la ruta en **EV** y en **Combustión** de acuerdo a los datos devueltos por Toyota en cada punto registrado de la ruta.
 - ![](https://img.shields.io/badge/Nuevo-22c55e) Al pulsar el botón **Cerrar sesión**, el usuario debe confirmar si realmente quiere cerrar la sesión, para evitar que se haga accidentalmente.
@@ -58,20 +76,32 @@
 - ![](https://img.shields.io/badge/Issue-fcd34d) A la hora de crear un **Nuevo repostaje** o editar uno existente, el *Tipo de Combustible* aparece ahora ordenado alfabéticamente.
 - ![](https://img.shields.io/badge/Bug-cc5a5a) Arreglado un `bug` por el cuál cuando se editaba un repostaje existente, el título era erróneamente **Nuevo repostaje** en lugar de **Editar repostaje**.
 
-### v.0.7.1 - Julio 2026
+---
+
+![Version](https://img.shields.io/badge/Versión-v0.7.1%20Julio%202026-ccaa5a)
+
 - ![](https://img.shields.io/badge/General-c8ccc4) *Publicada una versión de prueba para usuarios Linux para comprobar el correcto funcionamiento de la aplicación.*
 - ![](https://img.shields.io/badge/Nuevo-22c55e) Añadido soporte para crear el paquete de instalación para **Linux (Ubuntu/Debian)**.
 
-### v.0.7.0 - Julio 2026
+---
+
+![Version](https://img.shields.io/badge/Versión-v0.7.0%20Julio%202026-ccaa5a)
+
 - ![](https://img.shields.io/badge/General-c8ccc4) *Publicada una versión de prueba para usuarios acotados/testers para comprobar el correcto funcionamiento de la aplicación.*
 - ![](https://img.shields.io/badge/Mejora-29568a) _Coyota Vehicle Manager_ se llama ahora **Coyota**.
 
-### v.0.6.1 - Julio 2026
+---
+
+![Version](https://img.shields.io/badge/Versión-v0.6.1%20Julio%202026-ccaa5a)
+
 - ![](https://img.shields.io/badge/General-c8ccc4) Pruebas realizadas sobre **Windows 11**, **macOS Catalina Intel**, y **macOS Tahoe ARM (Apple Silicon) M2** para confirma el correcto funcionamiento de las funcionalidades, y la presentación
 - ![](https://img.shields.io/badge/General-c8ccc4) En **macOS ARM (Apple Silicon)** requiere pequeños ajustes en _CSS_, en concreto en la imagen del vehículo en la sección **Mis Vehículos** que distorsionaba la imagen. Después del cambio, esta ventana se presenta correctamente en **Windows 11** y en **macOS ARM (Apple Silicon)**
 - ![](https://img.shields.io/badge/General-c8ccc4) En **macOS Catalina**, **WKWebView** es muy antiguo y obsoleto, y afecta en la presentación _CSS_. El coste de implementar personalizaciones sobre _Intel_ requiere reescribir y personalizar gran parte de la aplicación. Por esta razón, se descarta la distribución de **Coyota** en **macOS Intel**
 
-### v.0.6.0 - Julio 2026
+---
+
+![Version](https://img.shields.io/badge/Versión-v0.6.0%20Julio%202026-ccaa5a)
+
 - ![](https://img.shields.io/badge/General-c8ccc4) **`Finalización de la versión Beta tras comprobar su estabilización`**
 - ![](https://img.shields.io/badge/Nuevo-22c55e) Agregada en la sección **Dashboard**, la dirección de última ubicación
 - ![](https://img.shields.io/badge/Nuevo-22c55e) Agregada en la sección **Dashboard**, la posibilidad de comparar el rendimiento, aceleración y frenada en las agrupaciones mensuales
@@ -83,7 +113,10 @@
 - ![](https://img.shields.io/badge/Mejora-29568a) Mejoras en el filtrado de datos del **Dashboard** para hacerlo más adecuado al diseño de la aplicación
 - ![](https://img.shields.io/badge/Mejora-29568a) Siguiendo la coherencia del resto de funcionalidades dentro de la aplicación, **Estadísticas** está ahora en **Viajes** en lugar de en **Repostajes**
 
-### v.0.5.0 - Julio 2026
+---
+
+![Version](https://img.shields.io/badge/Versión-v0.5.0%20Julio%202026-ccaa5a)
+
 - ![](https://img.shields.io/badge/Nuevo-22c55e) Añadido el **apartado de luces** en las alertas del vehículo
 - ![](https://img.shields.io/badge/Nuevo-22c55e) Agregada la gestión de tags múltiples, búsqueda por tags y por texto dentro de los viajes
 - ![](https://img.shields.io/badge/Mejora-29568a) Cambio y unificación de algunos iconos en todas las ventanas de la aplicación
@@ -93,14 +126,20 @@
 - ![](https://img.shields.io/badge/Bug-cc5a5a) Actualización de algunas llamadas de la **API de Toyota**, que ha cambiado sin previo aviso e impactaba a la aplicación, dejándola de funcionar en algunas de sus secciones
 - ![](https://img.shields.io/badge/Bug-cc5a5a) Resuelto un bug en **Repostajes**. Cuando se editaba un repostaje, la fecha y hora cambiaba a UTC
 
-### v.0.4.0 - Junio 2026
+---
+
+![Version](https://img.shields.io/badge/Versión-v0.4.0%20Junio%202026-ccaa5a)
+
 - ![](https://img.shields.io/badge/Nuevo-22c55e) Agregada la sección de **Mantenimiento** y gestión de operaciones en taller con el coche
 - ![](https://img.shields.io/badge/Nuevo-22c55e) Creación de la sección **Información**
 - ![](https://img.shields.io/badge/Mejora-29568a) Rediseño de la pantalla principal (**Mis Vehículos**)
 - ![](https://img.shields.io/badge/Mejora-29568a) Recolocación del **Dashboard** en la aplicación
 - ![](https://img.shields.io/badge/Bug-cc5a5a) Resolución de un bug que implicaba que la aplicación no refrescara automáticamente el token de usuario, cuando estando la aplicación abierta, el token caducaba
 
-### v.0.3.0 - Mayo 2026
+---
+
+![Version](https://img.shields.io/badge/Versión-v0.3.0%20Mayo%202026-ccaa5a)
+
 - ![](https://img.shields.io/badge/Nuevo-22c55e) Agregado en la sección **Repostajes** el apartado de **Estadísticas**
 - ![](https://img.shields.io/badge/Mejora-29568a) Consolidación final de los bloques principales de la aplicación
 - ![](https://img.shields.io/badge/Mejora-29568a) Dentro de la sección **Repostajes**, mejoras en la gráfica de **Precios de la gasolina**
@@ -108,7 +147,10 @@
 - ![](https://img.shields.io/badge/Mejora-29568a) Mejoras en **Viajes**. Agregado color de fondo y de letra para las **Categorías** de los viajes
 - ![](https://img.shields.io/badge/Mejora-29568a) Unificación de **Notificaciones** dentro del **Dashboard**
 
-### v.0.2.0 - Abril 2026
+---
+
+![Version](https://img.shields.io/badge/Versión-v0.2.0%20Abril%202026-ccaa5a)
+
 - ![](https://img.shields.io/badge/Nuevo-22c55e) Agregada la posibilidad de categorizar los viajes
 - ![](https://img.shields.io/badge/Nuevo-22c55e) Agregada **Velocidad Constante** en los **Viajes** y **Dashboard**
 - ![](https://img.shields.io/badge/Nuevo-22c55e) Ahora se tendrá que crear una gasolinera antes de agregar un consumo, para que cuando el usuario quiera agregar un consumo, tenga que seleccionar una gasolinera existente obligatoriamente
@@ -116,7 +158,10 @@
 - ![](https://img.shields.io/badge/Mejora-29568a) Mejoras para la estabilización de la aplicación
 - ![](https://img.shields.io/badge/Mejora-29568a) Reaplicación de colores para valores por debajo del valor óptimo en **Aceleración**, **Frenada** y **Velocidad constante**
 
-### v.0.1.0 - Marzo 2026
+---
+
+![Version](https://img.shields.io/badge/Versión-v0.1.0%20Marzo%202026-ccaa5a)
+
 - ![](https://img.shields.io/badge/General-c8ccc4) Primera versión funcional Beta de **Coyota Vehicle Manager**
 - ![](https://img.shields.io/badge/Nuevo-22c55e) Autenticación con cuenta **My Toyota** (_OAuth/ForgeRock de varios pasos_) [autenticación → autorización → obtención del token de usuario]
 - ![](https://img.shields.io/badge/Nuevo-22c55e) Creada la sección **Dashboard** con estado del vehículo, ubicación y rendimiento mensual
@@ -125,7 +170,10 @@
 - ![](https://img.shields.io/badge/Nuevo-22c55e) Listado y sincronización de viajes con mapas de ruta
 - ![](https://img.shields.io/badge/Nuevo-22c55e) _Splash screen_ con logo personalizado
 
-### v.0.0.1 - Febrero 2026
+---
+
+![Version](https://img.shields.io/badge/Versión-v0.0.1%20Febrero%202026-ccaa5a)
+
 - ![](https://img.shields.io/badge/General-c8ccc4) Primera versión _alpha_ de **Coyota Vehicle Manager**
 - ![](https://img.shields.io/badge/Nuevo-22c55e) Creación de estructura general y secciones
 - ![](https://img.shields.io/badge/Nuevo-22c55e) Conexiones a la **API de Toyota**
