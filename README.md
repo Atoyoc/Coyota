@@ -54,11 +54,13 @@ La aplicación tiene diferentes secciones:
 
 ![macOS](https://img.shields.io/badge/macOS-Apple%20Silicon-0071e3?logo=apple&amp;logoColor=white) ![Windows](https://img.shields.io/badge/Windows-64%20bits-2d8cff?logo=windows&amp;logoColor=white) ![Linux](https://img.shields.io/badge/Linux-64%20bits-fcc624?logo=linux&amp;logoColor=white)
 
+---
+
 ![Version](https://img.shields.io/badge/Versión%20Actual-1.5.0-cc5a5a)
 
-- ![](https://img.shields.io/badge/Nuevo-22c55e?style=for-the-badge) **Viajes** - Agregada la funcionalidad de _Exportar_ tanto una _Ruta_ como una _Ruta con Detalle_. La exportación será en fichero .json, que podrá ser cargada con un visor que estará disponible en la página web de **Coyota**, para visualizar el contenido de forma local en un ordenador, tableta, etc. que soporte el formato HTML del visor (requiere conexión a Internet para una experiencia completa). [coyota-visor.html](https://github.com/Atoyoc/Coyota/releases/download/v1.5.0/coyota-visor.html)
-- ![](https://img.shields.io/badge/Mejora-29568a?style=for-the-badge) **Precios de carburantes** - La opción _Estadísticas_ que está dentro de **Repostajes**, también aparece ahora dentro de _Precios de carburantes_.
-- ![](https://img.shields.io/badge/Bug-cc5a5a?style=for-the-badge) **Viajes** - Al elegír el filtro _Entre fechas..._ y seleccionar un rango de fechas, el filtro no actuaba, y sólo lo hacía al salir de esa parte de la aplicación y volver a entrar refrescando la acción.
+- ![](https://img.shields.io/badge/Nuevo-22c55e) **Viajes** - Agregada la funcionalidad de _Exportar_ tanto una _Ruta_ como una _Ruta con Detalle_. La exportación será en fichero .json, que podrá ser cargada con un visor que estará disponible en la página web de **Coyota**, para visualizar el contenido de forma local en un ordenador, tableta, etc. que soporte el formato HTML del visor (requiere conexión a Internet para una experiencia completa). [coyota-visor.html](https://github.com/Atoyoc/Coyota/releases/download/v1.5.0/coyota-visor.html)
+- ![](https://img.shields.io/badge/Mejora-29568a) **Precios de carburantes** - La opción _Estadísticas_ que está dentro de **Repostajes**, también aparece ahora dentro de _Precios de carburantes_.
+- ![](https://img.shields.io/badge/Bug-cc5a5a) **Viajes** - Al elegír el filtro _Entre fechas..._ y seleccionar un rango de fechas, el filtro no actuaba, y sólo lo hacía al salir de esa parte de la aplicación y volver a entrar refrescando la acción.
 
 
 ## Enlaces que pueden ser de interés
