@@ -2,6 +2,12 @@
 
 ![](assets/images/toyota_logo_200px.png) ![](assets/images/coyota_200px.png)
 
+![Rust](https://img.shields.io/badge/Rust-backend-b7410e?logo=rust&amp;logoColor=white) ![Tauri v2](https://img.shields.io/badge/Tauri-v2-24C8B8?logo=tauri&amp;logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-local%20only-0f80cc?logo=sqlite&amp;logoColor=white)
+
+![macOS](https://img.shields.io/badge/macOS-Apple%20Silicon-0071e3?logo=apple&amp;logoColor=white) ![Windows](https://img.shields.io/badge/Windows-64%20bits-2d8cff?logo=windows&amp;logoColor=white) ![Linux](https://img.shields.io/badge/Linux-64%20bits-fcc624?logo=linux&amp;logoColor=white)
+
+---
+
 [![Version](https://img.shields.io/badge/Versión%20Actual-1.5.0-cc5a5a)](https://github.com/Atoyoc/Coyota/releases/tag/v1.5.0) [![](https://img.shields.io/badge/Notas%20de%20la%20Versión-add16a)](#release_notes)
 
 ![](assets/images/coyota_app_01.png)
@@ -48,11 +54,7 @@ La aplicación tiene diferentes secciones:
 
 
 ## <a name="release_notes"></a>`Notas de Releases`
-- [Histórico de Versiones](old_releases.md)
-
-![Rust](https://img.shields.io/badge/Rust-backend-b7410e?logo=rust&amp;logoColor=white) ![Tauri v2](https://img.shields.io/badge/Tauri-v2-24C8B8?logo=tauri&amp;logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-local%20only-0f80cc?logo=sqlite&amp;logoColor=white)
-
-![macOS](https://img.shields.io/badge/macOS-Apple%20Silicon-0071e3?logo=apple&amp;logoColor=white) ![Windows](https://img.shields.io/badge/Windows-64%20bits-2d8cff?logo=windows&amp;logoColor=white) ![Linux](https://img.shields.io/badge/Linux-64%20bits-fcc624?logo=linux&amp;logoColor=white)
+[![](https://img.shields.io/badge/Notas%20de%20versiones%20anteriores-add16a)](old_releases.md)
 
 ---
 
@@ -64,8 +66,6 @@ La aplicación tiene diferentes secciones:
 
 
 ## Enlaces que pueden ser de interés
-
-[![](https://img.shields.io/badge/Notas%20de%20versiones%20anteriores-add16a)](old_releases.md)
 
 ### Aplicaciones móviles oficiales Toyota
 - [Toyota - MyToyota App para Android](https://play.google.com/store/apps/details?id=com.toyota.oneapp.eu)
