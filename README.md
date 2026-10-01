@@ -8,7 +8,7 @@
 
 ---
 
-[![Version](https://img.shields.io/badge/Versión%20Actual-1.5.0-cc5a5a)](https://github.com/Atoyoc/Coyota/releases/tag/v1.5.0) [![](https://img.shields.io/badge/Notas%20de%20la%20Versión-add16a)](#release_notes)
+[![Version](https://img.shields.io/badge/Versión%20Actual-1.6.0-cc5a5a)](https://github.com/Atoyoc/Coyota/releases/tag/v1.6.0) [![](https://img.shields.io/badge/Notas%20de%20la%20Versión-add16a)](#release_notes)
 
 ![](assets/images/coyota_app_01.png)
 ---
@@ -58,11 +58,27 @@ La aplicación tiene diferentes secciones:
 
 ---
 
-![Version](https://img.shields.io/badge/Versión%20Actual-1.5.0-cc5a5a)
+![Version](https://img.shields.io/badge/Versión%20Actual-1.6.0-cc5a5a)
 
-- ![](https://img.shields.io/badge/Nuevo-22c55e) **Viajes** - Agregada la funcionalidad de _Exportar_ tanto una _Ruta_ como una _Ruta con Detalle_. La exportación será en fichero .json, que podrá ser cargada con un visor que estará disponible en la página web de **Coyota**, para visualizar el contenido de forma local en un ordenador, tableta, etc. que soporte el formato HTML del visor (requiere conexión a Internet para una experiencia completa). [coyota-visor.html](https://github.com/Atoyoc/Coyota/releases/download/v1.5.0/coyota-visor.html)
-- ![](https://img.shields.io/badge/Mejora-29568a) **Precios de carburantes** - La opción _Estadísticas_ que está dentro de **Repostajes**, también aparece ahora dentro de _Precios de carburantes_.
-- ![](https://img.shields.io/badge/Bug-cc5a5a) **Viajes** - Al elegír el filtro _Entre fechas..._ y seleccionar un rango de fechas, el filtro no actuaba, y sólo lo hacía al salir de esa parte de la aplicación y volver a entrar refrescando la acción.
+- ![](https://img.shields.io/badge/Nuevo-22c55e) **Información** - Agregado en _Concesionario_ los campos para agregar el nombre del comercial que nos atendió y su email.
+- ![](https://img.shields.io/badge/Nuevo-22c55e) **Información** - Agregado en _Personalización_ el campo para agregar el precio aproximado que pagamos por el vehículo.
+- ![](https://img.shields.io/badge/Nuevo-22c55e) **Información** - Agregado en _Personalización_ el campo para agregar la marca, el tipo de neumático, la designación comercial del mismo, y su identificador, así como una caja de anotaciones para indicar otro tipo de neumático compatible, etc.
+- ![](https://img.shields.io/badge/Nuevo-22c55e) **Mantenimientos** - Agregado un nuevo campo para añadir comentarios a realizar en la próxima revisión del vehículo, y que no queremos olvidar.
+- ![](https://img.shields.io/badge/Nuevo-22c55e) **Repostajes** - Agregado en _Estadísticas_ una nueva opción en la lista desplegable para consultar el Gasto mensual realizado en los repostajes, incluyendo el número de repostajes y los litros total repostados durante los meses.
+- ![](https://img.shields.io/badge/Nuevo-22c55e) **Viajes** - Agregada la funcionalidad de poder ver los viajes _Similares_ a un viaje seleccionado, pudiendo incluir en ellos los que cambian el origen por el destino para meter viajes de ida y vuelta.
+- ![](https://img.shields.io/badge/Nuevo-22c55e) **Viajes** - Dentro de la funcionalidad de poder ver los viajes _Similares_, es posible ampliar o reducir un rango de metros en origen y destino, que por defecto es de 400 metros (casi medio kilómetro).
+- ![](https://img.shields.io/badge/Nuevo-22c55e) **Viajes** - Cuando se buscan viajes _Similares_, es posible agregar, modificar o eliminar tags en bloque a todos los viajes seleccionados.
+- ![](https://img.shields.io/badge/Nuevo-22c55e) **Viajes** - Se ha agregado una lista desplegable para filtrar los viajes según una etiqueta, de forma que pueden filtrar los viajes de alguna de las etiquetas indicadas (sobre todo si es más de una), los viajes que contienen las etiquetas indicadas mostrando también los viajes con más etiquetas de las indicadas, y los viajes que estrictamente tengan las etiquetas indicadas. De esta manera, se podrán filtrar los viajes con mayor granularidad.
+- ![](https://img.shields.io/badge/Nuevo-22c55e) **Viajes** - Los filtros pueden ser ahora expandidos o contraídos si queremos, para ganar espacio en la visualización de la información mostrada para un viaje.
+- ![](https://img.shields.io/badge/Mejora-29568a) **Información** - Se han renombrado los hitos principales dentro del Seguimiento de Fabricación para ser acordes a la información que envía Toyota al comprador y evitar malos entendidos.
+- ![](https://img.shields.io/badge/Mejora-29568a) **Repostajes** - El botón _Gasolineras_ se llama ahora _Mis Gasolineras_, que indica de forma uniquívoca el significado real de la acción detrás de ese botón.
+- ![](https://img.shields.io/badge/Mejora-29568a) **Repostajes** - El botón _Precios de carburantes_ ha sido rediseñado añadiendo un icono y cambiando su color de fondo y texto para hacerlo ligeramente destacable como funcionalidad especial de la aplicación.
+- ![](https://img.shields.io/badge/Mejora-29568a) **Repostajes** - El botón _Actualizar precios_ ha sido rediseñado siguiendo la misma línea de diseño del botón Precios de carburantes para destacarlo dentro de la ventana en la que aparece.
+- ![](https://img.shields.io/badge/Mejora-29568a) **Repostajes** - El botón _Ofertas_ ha sido rediseñado siguiendo la misma línea de diseño del botón _Actualizar precios_ y ha sido reemplazado después del botón _Vista general_.
+- ![](https://img.shields.io/badge/Mejora-29568a) **Repostajes** - El botón _Volver a Repostajes_ ha sido rediseñado para destacarlo ligeranebte sobre el resto de botones.
+- ![](https://img.shields.io/badge/Mejora-29568a) **Viajes** - Cuando se cambia la selección de viajes según un filtro, la parte en la que se muestra el detalle del viaje queda en blanco para evitar confusiones.
+- ![](https://img.shields.io/badge/Mejora-29568a) **Viajes** - Mejoras generales en la gestión de tags o etiquetas, y visualiazción de las mismas.
+- ![](https://img.shields.io/badge/Mejora-29568a) **Viajes** - Al crear una etiqueta o tag, el usuario verá un mensaje de creación correcta, y en el caso de que ya exista, un mensaje informando de esa situación.
 
 
 ## Enlaces que pueden ser de interés
