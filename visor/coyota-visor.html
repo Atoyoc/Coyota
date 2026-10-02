@@ -79,8 +79,14 @@ function resetView(){
 function initMap() {
   if (map) return;
   map = L.map('map').setView([40.4, -3.7], 6);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19, attribution: '© OpenStreetMap'
+  // El visor se abre como archivo local (file://) y el navegador no envía la
+  // cabecera Referer. Los servidores de OSM lo rechazan con 403 (su política de
+  // servidores de voluntarios), y CARTO ahora exige clave de API. Se usan las
+  // teselas de Esri (ArcGIS Online), que no requieren clave ni Referer.
+  // Nota: la ruta de tesela de Esri es {z}/{y}/{x} (fila antes que columna).
+  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+    maxZoom: 19,
+    attribution: 'Tiles © Esri'
   }).addTo(map);
 }
 function clearMap() { layers.forEach(l => map.removeLayer(l)); layers = []; }
