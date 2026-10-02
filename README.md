@@ -10,6 +10,11 @@
 
 [![Version](https://img.shields.io/badge/Versión%20Actual-1.6.0-cc5a5a)](https://github.com/Atoyoc/Coyota/releases/tag/v1.6.0) [![](https://img.shields.io/badge/Notas%20de%20la%20Versión-add16a)](#release_notes) [![](https://img.shields.io/badge/Manual%20de%20Usuario-6a80d1)](help/README.md)
 
+> [!WARNING]
+> En la v1.6.0, el visor que se puede descargar de forma independiente, y que permite visualizar offline los viajes exportados desde Coyota, ha dejado de funcionar debido a una restricción de OpenStreetMap con un error 403.
+>
+> El visor ha sido actualizado y probado, y ahora no da el error 403.
+
 ![](assets/images/coyota_app_01.png)
 ---
 
