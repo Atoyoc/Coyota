@@ -13,7 +13,7 @@
 > [!WARNING]
 > En la v1.6.0, el visor que se puede descargar de forma independiente, y que permite visualizar offline los viajes exportados desde Coyota, ha dejado de funcionar debido a una restricción de OpenStreetMap con un error 403.
 >
-> El visor ha sido actualizado y probado, y ahora no da el error 403.
+> El visor ha sido actualizado y probado, y lo he vuelto a subir en los ficheros de releases de la v1.6.0 confirmando que ya no da el error 403 y permite visualizar los viajes correctamente.
 
 ![](assets/images/coyota_app_01.png)
 ---
