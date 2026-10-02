@@ -75,7 +75,7 @@ La aplicación tiene diferentes secciones:
 - ![](https://img.shields.io/badge/Mejora-29568a) **Repostajes** - El botón _Precios de carburantes_ ha sido rediseñado añadiendo un icono y cambiando su color de fondo y texto para hacerlo ligeramente destacable como funcionalidad especial de la aplicación.
 - ![](https://img.shields.io/badge/Mejora-29568a) **Repostajes** - El botón _Actualizar precios_ ha sido rediseñado siguiendo la misma línea de diseño del botón Precios de carburantes para destacarlo dentro de la ventana en la que aparece.
 - ![](https://img.shields.io/badge/Mejora-29568a) **Repostajes** - El botón _Ofertas_ ha sido rediseñado siguiendo la misma línea de diseño del botón _Actualizar precios_ y ha sido reemplazado después del botón _Vista general_.
-- ![](https://img.shields.io/badge/Mejora-29568a) **Repostajes** - El botón _Volver a Repostajes_ ha sido rediseñado para destacarlo ligeranebte sobre el resto de botones.
+- ![](https://img.shields.io/badge/Mejora-29568a) **Repostajes** - El botón _Volver a Repostajes_ ha sido rediseñado para destacarlo ligeramente sobre el resto de botones.
 - ![](https://img.shields.io/badge/Mejora-29568a) **Viajes** - Cuando se cambia la selección de viajes según un filtro, la parte en la que se muestra el detalle del viaje queda en blanco para evitar confusiones.
 - ![](https://img.shields.io/badge/Mejora-29568a) **Viajes** - Mejoras generales en la gestión de tags o etiquetas, y visualización de las mismas.
 - ![](https://img.shields.io/badge/Mejora-29568a) **Viajes** - Al crear una etiqueta o tag, el usuario verá un mensaje de creación correcta, y en el caso de que ya exista, un mensaje informando de esa situación.
