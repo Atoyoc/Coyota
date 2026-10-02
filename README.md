@@ -8,7 +8,7 @@
 
 ---
 
-[![Version](https://img.shields.io/badge/Versión%20Actual-1.6.0-cc5a5a)](https://github.com/Atoyoc/Coyota/releases/tag/v1.6.0) [![](https://img.shields.io/badge/Notas%20de%20la%20Versión-add16a)](#release_notes)
+[![Version](https://img.shields.io/badge/Versión%20Actual-1.6.0-cc5a5a)](https://github.com/Atoyoc/Coyota/releases/tag/v1.6.0) [![](https://img.shields.io/badge/Notas%20de%20la%20Versión-add16a)](#release_notes) [![](https://img.shields.io/badge/Manual%20de%20Usuario-6a80d1)](help/README.md)
 
 ![](assets/images/coyota_app_01.png)
 ---
