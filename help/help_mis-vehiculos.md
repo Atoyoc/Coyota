@@ -16,7 +16,8 @@ La pantalla que verás será similar a la siguiente:
 
 Adicionalmente, acercando el puntero del ratón al **código VIN** que aparece en la parte superior derecha de la aplicación, verás el coche seleccionado en cualquier momento, de forma tal que si tienes varios vehículos en la aplicación, puedas en todo momento saber sobre qué vehículo estás viendo los datos.
 
-En la ficha del vehículo podrás ver la siguiente información:
+<img src="assets/images/icon_yellow_star.svg" height="20"/> En la ficha del vehículo podrás ver la siguiente información:
+
 * Imagen del coche
 * Tipo de modelo
 * Color

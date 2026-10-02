@@ -8,7 +8,7 @@ Cuando inicias la aplicación por primera vez, cierras sesión, o el _token de u
 
 ![](assets/images/app_login.png)
 
-En esta ventana tendrás que:
+<img src="assets/images/icon_yellow_star.svg" height="20"/> En esta ventana tendrás que:
 * Indicar tus credenciales de la aplicación **My Toyota** (email y password).
 * Podrás indicar si deseas almacenar en tu sistema las credenciales utilizadas o no.
 * Y tendrás que aceptar los términos y condiciones para poder usar la aplicación. En caso contrario no podrás utilizar la aplicación. Los términos y condiciones, entre otras cosas, eximen al desarrollador de **Coyota** cualquier responsabilidad sobre el uso de la misma por parte del usuario.
