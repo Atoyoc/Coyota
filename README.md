@@ -41,20 +41,10 @@
 > [!NOTE]
 > Inicialmente el proyecto nació para dar soporte para `macOS Intel` también, pero la incompatibilidad de algunas funcionalidades a la hora de presentarlas en pantalla, hacía inviable esta vía, por lo que en la v0.6.1 se decidió eliminar esa posibilidad y sólo está disponible para **Windows**, **Linux** y **macOS Apple Silicon**.
 
-La aplicación tiene diferentes secciones:
-  |Sección|Descripción|
-  |--|--|
-  |**`Mis Vehículos`**|Listado de los vehículos asociados a tu cuenta de usuario Toyota, y selección del vehículo con el que operar (**por defecto se selecciona el primer vehículo**)|
-  |**`Información`**|Información general sobre un vehículo (**VIN, Código Katashiki, Contrato, etc**), y de los datos que Toyota tiene del usuario (**Nombre, Email, Teléfono, etc**)|
-  |**`Operaciones`**|Operaciones remotas a realizar sobre el vehículo (**actualmente deshabilitadas hasta poder confirmar su correcta operatibilidad**)|
-  |**`Dashboard`**|Muestra el rendimiento mensual y general realizado con el vehículo, la última ubicación conocida del vehículo, y el estado del mismo según los datos devueltos por Toyota|
-  |**`Viajes`**|Listado de viajes, sincronización de los mismos, y estadísticas (**si hay datos de repostajes añadidos**)|
-  |**`Repostajes`**|Gestión de repostajes, pudiendo agregar gasolineras, registro del repostaje, y visualización de evolución de precios|
-  |**`Mantenimientos`**|Historial de servicio de tu vehículo Toyota, de todas las revisiones, de cuando toca realizar el siguiente mantenimiento, posibles problemas detectados, y gestión de entradas al taller para hacer un seguimiento de los costes, tareas, etc|
-
+Accede al [![](https://img.shields.io/badge/Manual%20de%20Usuario-6a80d1)](help/README.md) para conocer más sobre la aplicación y las diferentes secciones que encontraremos.
 
 ## <a name="release_notes"></a>`Notas de Releases`
-[![](https://img.shields.io/badge/Notas%20de%20versiones%20anteriores-add16a)](old_releases.md)
+[![](https://img.shields.io/badge/Notas%20de%20versiones%20anteriores-799e59)](old_releases.md)
 
 ---
 
