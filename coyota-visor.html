@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Coyota · Visor de viajes</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  :root{
+    --bg:#0f1115; --surface:#171a21; --surface2:#1f232c; --border:#2b303b;
+    --text:#e8eaf0; --muted:#9aa3b2; --tag:#2f6eb6; --ok:#22c55e; --warn:#f59e0b;
+    --ko:#cb8686; --ev:#22c55e; --comb:#cc4400; --title:#5f9fe8;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%}
+  body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;display:flex;flex-direction:column;height:100vh}
+  header{display:flex;align-items:center;gap:1rem;padding:.7rem 1.1rem;background:var(--surface);border-bottom:1px solid var(--border);flex-wrap:wrap}
+  header .logo{font-weight:800;letter-spacing:.02em;color:var(--muted)}
+  header .logo i{font-size:.90rem}
+  header .logo b{color:var(--title)}
+  header .logo a{color:inherit;text-decoration:none}
+  header .sub{font-size:.75rem;color:var(--muted);border:1px solid var(--muted);border-radius:100px;padding:.12rem .6rem}
+  header .sub:empty{display:none}
+  .spacer{flex:1}
+  .btn{background:var(--surface2);border:1px solid var(--border);color:var(--text);border-radius:8px;padding:.45rem .8rem;font-size:.82rem;cursor:pointer}
+  .btn.primary{background:var(--tag);border-color:var(--tag);color:#fff;font-weight:600}
+  main{flex:1;display:flex;min-height:0}
+  #panel{width:380px;flex-shrink:0;overflow-y:auto;border-right:1px solid var(--border);padding:1rem}
+  #mapwrap{flex:1;position:relative}
+  #map{position:absolute;inset:0}
+  .empty{color:var(--muted);font-size:.85rem;padding:2rem 1rem;text-align:center;line-height:1.5}
+  .title{font-size:1.05rem;font-weight:700;margin:.1rem 0 .1rem;color:var(--warn)}
+  .sub2{font-size:.78rem;color:var(--muted);margin-bottom:.6rem}
+  .tags{display:flex;flex-wrap:wrap;gap:.35rem;margin:.4rem 0 .7rem}
+  .tag{font-size:.7rem;font-weight:700;padding:.1rem .5rem;border-radius:100px;color:#fff;background:var(--tag)}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:.5rem .75rem;margin:.4rem 0}
+  .cell .k{font-size:.66rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+  .cell .v{font-size:.9rem;font-weight:600}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:.75rem .85rem;margin-bottom:.8rem}
+  .card h3{margin:0 0 .5rem;font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+  .scores{display:flex;flex-direction:column;gap:.45rem}
+  .score{display:flex;align-items:center;gap:.5rem;font-size:.78rem}
+  .score .bar{flex:1;height:6px;background:var(--surface2);border-radius:100px;overflow:hidden}
+  .score .bar i{display:block;height:100%;border-radius:100px;background:var(--tag)}
+  .legend{display:flex;gap:1rem;font-size:.72rem;color:var(--muted);margin-top:.5rem;flex-wrap:wrap}
+  .legend b{display:inline-block;width:18px;height:3px;border-radius:2px;vertical-align:middle}
+  .notes{font-size:.8rem;color:var(--text);white-space:pre-wrap}
+  .foot{font-size:.68rem;color:var(--muted);margin-top:.5rem}
+  .leaflet-popup-content{font-size:.8rem}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo"><b><a target="_blank" href="https://github.com/Atoyoc/Coyota">Coyota</a></b> <span style="font-size:1.2rem;line-height:0;vertical-align:middle">·</span> <i>Visor de viajes</i></div>
+  <div class="sub" id="file-info"></div>
+  <div class="spacer"></div>
+  <button class="btn primary" onclick="document.getElementById('file').click()">Cargar viaje (.json)…</button>
+  <button class="btn" id="btn-center" style="display:none" onclick="resetView()" title="Centrar el mapa en la ruta"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;margin-right:.3rem"><circle cx="12" cy="12" r="7"/><line x1="12" y1="1" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="23"/><line x1="1" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="23" y2="12"/></svg>Centrar</button>
+  <input id="file" type="file" accept="application/json,.json" style="display:none" onchange="onFile(event)"/>
+</header>
+<main>
+  <div id="panel">
+    <div class="empty">Carga un fichero <b>.json</b> exportado desde Coyota (modo <b>ruta</b> o <b>detalle</b>) para ver los detalles del viaje aquí, y en el mapa la ruta realizada.</div>
+  </div>
+  <div id="mapwrap"><div id="map"></div></div>
+</main>
+
+<script>
+let map, layers = [];
+let _initialView = null;   // vista inicial tras cargar la ruta (para el botón "Centrar")
+
+function resetView(){
+  if (!map || !_initialView) return;
+  if (_initialView.type === 'bounds') map.fitBounds(_initialView.data, { padding:[30,30] });
+  else map.setView(_initialView.data, 13);
+}
+
+function initMap() {
+  if (map) return;
+  map = L.map('map').setView([40.4, -3.7], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19, attribution: '© OpenStreetMap'
+  }).addTo(map);
+}
+function clearMap() { layers.forEach(l => map.removeLayer(l)); layers = []; }
+function add(l) { l.addTo(map); layers.push(l); return l; }
+
+function esc(s){ return String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+function fmtKm(m){ return (m == null) ? '—' : (m/1000).toFixed(1) + ' km'; }
+function fmtDur(s){ if (s == null) return '—'; s = Math.round(s); const h = Math.floor(s/3600), m = Math.floor((s%3600)/60); return (h?h+' h ':'') + m + ' min'; }
+function fmtDate(iso){ if(!iso) return '—'; const d = new Date(iso); if (isNaN(d)) return String(iso); const s = d.toLocaleDateString('es-ES',{weekday:'long',day:'numeric',month:'long',year:'numeric'}); return s.charAt(0).toUpperCase()+s.slice(1); }
+function fmtTime(iso){ if(!iso) return '—'; const d = new Date(iso); return isNaN(d) ? '' : d.toLocaleTimeString('es-ES',{hour:'2-digit',minute:'2-digit'}); }
+
+function onFile(ev){
+  const f = ev.target.files && ev.target.files[0];
+  if (!f) return;
+  const reader = new FileReader();
+  reader.onload = () => {
+    try {
+      const data = JSON.parse(reader.result);
+      render(data, f.name);
+    } catch(e) {
+      document.getElementById('panel').innerHTML = '<div class="empty">No se pudo leer el fichero: ' + esc(e.message||e) + '</div>';
+    }
+  };
+  reader.readAsText(f);
+}
+
+function render(data, filename){
+  initMap();
+  clearMap();
+  document.getElementById('file-info').textContent = filename || '';
+
+  if (!data || data.format !== 'coyota-trip' || !data.trip) {
+    document.getElementById('panel').innerHTML = '<div class="empty">El fichero no es una exportación de viaje de Coyota.</div>';
+    return;
+  }
+  const mode = data.mode || (data.trip.route_points ? 'detail' : 'route');
+  const t = data.trip;
+
+  // ── Coordenadas de la ruta ──
+  let coords = [];             // [[lat,lon],...]
+  let modes  = [];             // modo EV por punto (detalle)
+  if (mode === 'route' && Array.isArray(t.route)) {
+    coords = t.route.map(p => [p[0], p[1]]);
+  } else if (Array.isArray(t.route_points)) {
+    const pts = [...t.route_points].sort((a,b) => (a.seq||0) - (b.seq||0));
+    coords = pts.map(p => [p.lat, p.lon]);
+    modes  = pts.map(p => p.mode);
+  }
+
+  drawRoute(coords, modes, mode);
+  drawEnds(t, coords);
+  if (mode !== 'route') drawBehaviours(t.behaviours);
+
+  if (coords.length) { map.fitBounds(coords, { padding:[30,30] }); _initialView = { type:'bounds', data: coords }; }
+  else if (t.start_lat != null && t.start_lon != null) { map.setView([t.start_lat, t.start_lon], 13); _initialView = { type:'point', data:[t.start_lat, t.start_lon] }; }
+  else _initialView = null;
+  const cb = document.getElementById('btn-center');
+  if (cb) cb.style.display = _initialView ? '' : 'none';
+
+  renderPanel(t, mode, coords.length);
+}
+
+function drawRoute(coords, modes, mode){
+  if (coords.length < 2) return;
+  if (mode === 'route' || !modes.some(m => m === 0 || m === 1)) {
+    add(L.polyline(coords, { color:'#2f6eb6', weight:4, opacity:.9 }));
+    return;
+  }
+  // Detalle: segmentos coloreados por modo EV/combustión
+  const colorFor = m => m === 1 ? getVar('--ev') : m === 0 ? getVar('--comb') : '#8892a4';
+  let runStart = 0;
+  for (let i = 1; i <= coords.length; i++) {
+    const changed = i === coords.length || modes[i] !== modes[runStart];
+    if (changed) {
+      const seg = coords.slice(runStart, i + (i < coords.length ? 1 : 0));
+      if (seg.length >= 2) add(L.polyline(seg, { color: colorFor(modes[runStart]), weight:4, opacity:.9 }));
+      runStart = i;
+    }
+  }
+}
+
+// Pin tipo "gota" (como en la app): verde inicio, rojo fin
+function pinIcon(color, label){
+  return L.divIcon({
+    className: '',
+    html: `<div style="width:26px;height:26px;border-radius:50% 50% 50% 0;background:${color};border:2px solid #fff;transform:rotate(-45deg);box-shadow:0 2px 6px rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center">`
+      + `<span style="transform:rotate(45deg);color:#fff;font-size:12px;font-weight:800;line-height:1">${label || ''}</span></div>`,
+    iconSize:[26,26], iconAnchor:[13,26], popupAnchor:[0,-28]
+  });
+}
+function coordPopup(title, latlng){
+  return `<strong>${title}</strong><br>Latitud: ${latlng[0].toFixed(6)}<br>Longitud: ${latlng[1].toFixed(6)}<br><a target='_blank' href='https://www.google.com/maps/search/?api=1&query=${latlng[0].toFixed(6)},${latlng[1].toFixed(6)}'>Google Maps</a>`;
+}
+function drawEnds(t, coords){
+  const s = (t.start_lat != null && t.start_lon != null) ? [t.start_lat, t.start_lon] : coords[0];
+  const e = (t.end_lat != null && t.end_lon != null) ? [t.end_lat, t.end_lon] : coords[coords.length-1];
+  if (s) add(L.marker(s, { icon: pinIcon('#22c55e', 'A') }).bindPopup(coordPopup('Inicio', s)));
+  if (e) add(L.marker(e, { icon: pinIcon('#ef4444', 'B') }).bindPopup(coordPopup('Fin', e)));
+}
+
+// Texto para mostrar el Comportamiento a la conducción (igual que en la app)
+function behaviourLabel(b){
+  const M = {
+    A: ['Aceleración Brusca',             'Aceleración Suave'],
+    B: ['Frenado Brusco',                 'Frenado Suave'],
+    C: ['Velocidad Constante Deficiente', 'Velocidad Constante Buena'],
+  };
+  const pair = M[(b.behaviour_type||'').trim().toUpperCase()];
+  if (!pair) return b.good ? 'Comportamiento correcto' : 'Comportamiento a mejorar';
+  return b.good ? pair[1] : pair[0];
+}
+function drawBehaviours(bhs){
+  if (!Array.isArray(bhs)) return;
+  bhs.forEach(b => {
+    if (b.lat == null || b.lon == null) return;
+    const color = b.good ? '#22c55e' : '#ef4444';
+    const sym   = b.good ? '✓' : '!';
+    const icon = L.divIcon({
+      className: '',
+      html: `<div style="width:22px;height:22px;border-radius:50%;background:${color};border:2px solid #fff;box-shadow:0 1px 5px rgba(0,0,0,.45);color:#fff;font-size:13px;font-weight:800;line-height:18px;text-align:center">${sym}</div>`,
+      iconSize:[22,22], iconAnchor:[11,11], popupAnchor:[0,-12]
+    });
+    const when = b.ts ? new Date(b.ts).toLocaleString('es-ES',{day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit'}) : '';
+    add(L.marker([b.lat, b.lon], { icon }).bindPopup(`<strong>${esc(behaviourLabel(b))}</strong>${when ? '<br>'+when : ''}`));
+  });
+}
+
+function getVar(name){ return getComputedStyle(document.documentElement).getPropertyValue(name).trim() || '#000'; }
+
+// Iconos (SVG en línea) para las etiquetas del panel. Heredan el color del texto.
+const PANEL_ICONS = {
+  time:  '<circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/>',                       // reloj
+  dist:  '<svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px;margin-right:.28rem"><path d="M6 18.5 Q 7.5 11.5 14.8 10.6" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-dasharray="0.1 4.8"/><circle cx="6" cy="18.5" r="2.7"/><path d="M15.8 11 C15.8 11 12.3 7.2 12.3 4.7 C12.3 2.66 13.86 1 15.8 1 C17.74 1 19.3 2.66 19.3 4.7 C19.3 7.2 15.8 11 15.8 11 Z"/><circle cx="15.8" cy="4.7" r="1.75" style="fill:var(--surface)"/></svg>', // origen → ruta → destino (estilo MyToyota/app)
+  speed: '<path d="M4 19a8 8 0 1 1 16 0"/><line x1="12" y1="19" x2="15.5" y2="11"/>',                   // velocímetro
+  fuel:  '<path d="M12 3s5 5.5 5 9.5a5 5 0 0 1-10 0C7 8.5 12 3 12 3z"/>',                                // gota (consumo)
+  ev:    '<polygon points="13 2 4 14 12 14 11 22 20 10 12 10 13 2"/>',                                   // rayo (EV)
+};
+function pIcon(type){
+  const v = PANEL_ICONS[type];
+  if (!v) return '';
+  if (v.startsWith('<svg')) return v;  // icono completo (con sus propios trazos/rellenos)
+  return `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;margin-right:.28rem">${v}</svg>`;
+}
+
+function renderPanel(t, mode, nPoints){
+  const evPct = (t.ev_distance && t.length_meters) ? Math.round(t.ev_distance*100/t.length_meters) : null;
+  const l100  = (t.fuel_consumption != null && t.length_meters > 100) ? (t.fuel_consumption/(t.length_meters/1000)*100).toFixed(1) : null;
+  const cell = (k,v,icon) => `<div class="cell"><div class="k">${pIcon(icon)}${k}</div><div class="v">${v}</div></div>`;
+  const scoreBar = (name,val) => (val == null) ? '' :
+    `<div class="score"><span style="width:140px;flex-shrink:0">${name}</span><span class="bar"><i style="width:${Math.max(0,Math.min(100,val))}%"></i></span><span>${val}</span></div>`;
+
+  const tags = (t.user_categories||[]).map(c =>
+    `<span class="tag" style="background:${c.bg_color||'#2f6eb6'};color:${c.text_color||'#fff'}">${esc(c.name)}</span>`).join('');
+
+  let html = '';
+  html += `<div class="title">${esc(t.custom_title || t.title || 'Viaje')}</div>`;
+  html += `<div class="sub2">${fmtDate(t.start_ts)}<br>Inicio ${fmtTime(t.start_ts)} · Fin ${fmtTime(t.end_ts)}</div>`;
+  if (t.start_address || t.end_address) {
+    const endRow = (color, addr) => `<div style="display:flex;align-items:flex-start;gap:.45rem;font-size:.76rem;margin:.12rem 0">`
+      + `<span style="width:9px;height:9px;border-radius:50%;background:${color};flex-shrink:0;margin-top:.28rem"></span>`
+      + `<span style="color:var(--muted)">${esc(addr || '—')}</span></div>`;
+    html += `<div style="margin:.25rem 0 .6rem">${endRow('#22c55e', t.start_address)}${endRow('#ef4444', t.end_address)}</div>`;
+  }
+  if (tags) html += `<div class="tags">${tags}</div>`;
+
+  // Resumen
+  const cells = [];
+  cells.push(cell(mode === 'route' ? 'Tiempo aproximado' : 'Tiempo de Conducción', fmtDur(t.duration_secs), 'time'));
+  cells.push(cell('Distancia recorrida', t.distance_km != null ? t.distance_km.toFixed(1)+' km' : fmtKm(t.length_meters), 'dist'));
+  if (t.average_speed != null) cells.push(cell('Velocidad media', Math.round(t.average_speed)+' km/h', 'speed'));
+  if (t.fuel_consumption != null) cells.push(cell('Consumo', t.fuel_consumption.toFixed(2)+' l' + (l100?` - ${l100} l/100 km`:''), 'fuel'));
+  html += `<div class="card"><h3 style="color:var(--title)">Resumen del Viaje</h3><div class="grid">${cells.join('')}</div></div>`;
+
+  // EV (solo si hay datos EV)
+  const evCells = [];
+  if (evPct != null)         evCells.push(cell('Uso de EV', evPct+' %', 'ev'));
+  if (t.ev_time != null)     evCells.push(cell('Tiempo en EV', fmtDur(t.ev_time), 'time'));
+  if (t.ev_distance != null) evCells.push(cell('Distancia en EV', (t.ev_distance/1000).toFixed(1)+' km', 'dist'));
+  if (evCells.length) html += `<div class="card"><h3 style="color:var(--title)">Resumen de EV</h3><div class="grid">${evCells.join('')}</div></div>`;
+
+  // Puntuaciones (solo detalle)
+  if (mode !== 'route' && (t.score_global != null || t.score_acceleration != null)) {
+    html += `<div class="card"><h3 style="color:var(--title)">Conducción</h3>`;
+    html += `<div class="scores">
+      ${scoreBar('Rendimiento global', t.score_global)}
+      ${t.score_global != null ? '<hr style="border:none;border-top:1px solid var(--border);width:100%;margin:.1rem 0">' : ''}
+      ${scoreBar('Aceleración', t.score_acceleration)}
+      ${scoreBar('Frenada', t.score_braking)}
+      ${scoreBar('Vel. constante', t.score_constant_speed)}
+    </div></div>`;
+  }
+
+  if (t.custom_notes) html += `<div class="card"><h3>Notas</h3><div class="notes">${esc(t.custom_notes)}</div></div>`;
+
+  if (mode !== 'route') {
+    html += `<div class="legend">
+      <span><b style="background:var(--ev)"></b> Eléctrico (EV)</span>
+      <span><b style="background:var(--comb)"></b> Combustión</span>
+    </div>`;
+  }
+  html += `<div class="foot" hidden>Exportación: ${esc(mode)} · ${esc(t.id || '')}</div>`;
+
+  document.getElementById('panel').innerHTML = html;
+}
+
+// Mapa base visible desde el principio
+initMap();
+</script>
+</body>
+</html>
