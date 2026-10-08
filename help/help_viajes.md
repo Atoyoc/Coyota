@@ -13,6 +13,9 @@ Esta ventana recoge todo lo relativo a la gestión de viajes realizados con nues
 > [!IMPORTANT]
 > Si no ves algún viaje, es posible que no hayas pulsado el botón **Sincronizar**, y si ves alguna incongruencia en los datos, es posible que tengas que ir a [Configuración](help_configuracion.md) y hacer clic en el botón **Sincronización completa**. Esto no es lo habitual y no es normal que suceda, pero si se da el caso, existe esa forma de _forzar_ a la aplicación para que intente recuperar información desde los servicios de Toyota.
 
+> [!NOTE]
+> **My Toyota** _redondea_ (_Math.round_) las cifras al más cercano, mientras que **Coyota** _trunca_ (_Math.floor_) esa cifra. Aunque esto es así hasta la v1.6.0 incluida de Coyota, en versiones posteriores se pasará a actuar como **My Toyota** para evitar malos entendidos y posibles confusiones. Aún y así, he detectado que en algunos cálculos, **My Toyota** además de usar redondeo al más cercano, a veces no termina de actuar así y parece que trunca alguna cifra. Ese es el motivo de que algún dato que veas en **Coyota**, difiera con el de **My Toyota**.
+
 La ventana de esta sección tendrá un aspecto similar al siguiente:
 
 ![](assets/images/app_viajes.png)
