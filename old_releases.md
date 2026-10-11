@@ -4,7 +4,19 @@
 
 ## Histórico de Versiones de Coyota
 
-![Version](https://img.shields.io/badge/Versión%20Actual-1.6.0-cc5a5a)
+![Version](https://img.shields.io/badge/Versión%20Actual-1.7.0-cc5a5a)
+
+- ![](https://img.shields.io/badge/Toyota-b14dca) En octubre 2026, Toyota ha cambiado la forma de obtener los datos GPS de un viaje. Se ha actualizado la forma en la que se obtenía esa información en la **API de Toyota**
+- ![](https://img.shields.io/badge/Nuevo-22c55e) **Información** - Dentro del apartado **Personalización** hay dos nuevos campos, uno para indicar la _Fecha de pago_, y otro para indicar la fecha de la _Recogida del concesionario_
+- ![](https://img.shields.io/badge/Nuevo-22c55e) <strong>Notas</strong> - Agregada una nueva sección para agregar en formato **Markdown**, anotaciones, documentación o cualquier otra información que consideremos útil y que no queramos perder, y que en los campos de notas y observación de **Coyota** no tengan sentido.
+- ![](https://img.shields.io/badge/Mejora-29568a) **Repostajes** - Dentro de **Precios de Carburantes**, se puede ordenar el listado tanto por _Precio_, como por _Nombre_. La ordenación por nombre se realiza por _Empresa_ y _Dirección_.
+- ![](https://img.shields.io/badge/Mejora-29568a) **Viajes** - Se ha unificado el cálculo de medias e información general con **My Toyota**. En **My Toyota** se produce un redondeo a la cifra más cercana, y en **Coyota** se truncaba. Para evitar posibles malos entendidos entre lo que se muestra en la aplicación oficial y **Coyota**, se ha decidido unificar este criterio. No obstante, hay momentos en los que parece que la aplicación oficial, además de redondear, trunca algunos datos.
+- ![](https://img.shields.io/badge/Mejora-29568a) **Viajes** - Cuando se intentan encontrar viajes _Similares_, por defecto, la opción _Incluir Viajes de Vuelta_ aparecerá activada.
+- ![](https://img.shields.io/badge/Bug-cc5a5a) **Repostajes** - Si en **Precios de carburantes** el usuario había filtrado algún dato y luego pulsaba en _Actualizar precios_, los filtros después de actualizar se perdían. Ahora si los filtros no han cambiado, los mantiene.
+
+---
+
+![Version](https://img.shields.io/badge/Versión-v1.6.0-ccaa5a)
 
 - ![](https://img.shields.io/badge/Nuevo-22c55e) **Información** - Agregado en _Concesionario_ los campos para agregar el nombre del comercial que nos atendió y su email.
 - ![](https://img.shields.io/badge/Nuevo-22c55e) **Información** - Agregado en _Personalización_ el campo para agregar el precio aproximado que pagamos por el vehículo.
