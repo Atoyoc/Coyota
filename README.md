@@ -8,12 +8,14 @@
 
 ---
 
-[![Version](https://img.shields.io/badge/Versión%20Actual-1.6.0-cc5a5a)](https://github.com/Atoyoc/Coyota/releases/tag/v1.6.0) [![](https://img.shields.io/badge/Notas%20de%20la%20Versión-add16a)](#release_notes) [![](https://img.shields.io/badge/Manual%20de%20Usuario-6a80d1)](help/README.md)
+[![Version](https://img.shields.io/badge/Versión%20Actual-1.7.1-cc5a5a)](https://github.com/Atoyoc/Coyota/releases/tag/v1.7.1) [![](https://img.shields.io/badge/Notas%20de%20la%20Versión-add16a)](#release_notes) [![](https://img.shields.io/badge/Manual%20de%20Usuario-6a80d1)](help/README.md)
 
 > [!WARNING]
-> En la v1.6.0, el visor que se puede descargar de forma independiente, y que permite visualizar offline los viajes exportados desde Coyota, ha dejado de funcionar debido a una restricción de OpenStreetMap con un error 403.
+> En la v1.7.1, se ha resuelto un problema debido a un cambio de Toyota, y que impedía recuperar los puntos GPS de la ruta de un viaje.
+> 
+> Si has sincronizado viajes y el mapa no aparece, debes ir a la **Configuración**, y dentro de la configuración, al apartado **Sincronización**, y dentro de este apartado, pulsar el botón **Sinzronización completa**.
 >
-> El visor ha sido actualizado y probado, y lo he vuelto a subir en los ficheros de releases de la v1.6.0 confirmando que ya no da el error 403 y permite visualizar los viajes correctamente.
+> De esta manera, la aplicación buscará los viajes no descargados o que estén incompletos, y podrá actualizar la información correctamente.
 
 ![](assets/images/coyota_app_01.png)
 ---
@@ -53,27 +55,15 @@ Accede al [![](https://img.shields.io/badge/Manual%20de%20Usuario-6a80d1)](help/
 
 ---
 
-![Version](https://img.shields.io/badge/Versión%20Actual-1.6.0-cc5a5a)
+![Version](https://img.shields.io/badge/Versión%20Actual-1.7.1-cc5a5a)
 
-- ![](https://img.shields.io/badge/Nuevo-22c55e) **Información** - Agregado en _Concesionario_ los campos para agregar el nombre del comercial que nos atendió y su email.
-- ![](https://img.shields.io/badge/Nuevo-22c55e) **Información** - Agregado en _Personalización_ el campo para agregar el precio aproximado que pagamos por el vehículo.
-- ![](https://img.shields.io/badge/Nuevo-22c55e) **Información** - Agregado en _Personalización_ el campo para agregar la marca, el tipo de neumático, la designación comercial del mismo, y su identificador, así como una caja de anotaciones para indicar otro tipo de neumático compatible, etc.
-- ![](https://img.shields.io/badge/Nuevo-22c55e) **Mantenimientos** - Agregado un nuevo campo para añadir comentarios a realizar en la próxima revisión del vehículo, y que no queremos olvidar.
-- ![](https://img.shields.io/badge/Nuevo-22c55e) **Repostajes** - Agregado en _Estadísticas_ una nueva opción en la lista desplegable para consultar el Gasto mensual realizado en los repostajes, incluyendo el número de repostajes y los litros total repostados durante los meses.
-- ![](https://img.shields.io/badge/Nuevo-22c55e) **Viajes** - Agregada la funcionalidad de poder ver los viajes _Similares_ a un viaje seleccionado, pudiendo incluir en ellos los que cambian el origen por el destino para meter viajes de ida y vuelta.
-- ![](https://img.shields.io/badge/Nuevo-22c55e) **Viajes** - Dentro de la funcionalidad de poder ver los viajes _Similares_, es posible ampliar o reducir un rango de metros en origen y destino, que por defecto es de 400 metros (casi medio kilómetro).
-- ![](https://img.shields.io/badge/Nuevo-22c55e) **Viajes** - Cuando se buscan viajes _Similares_, es posible agregar, modificar o eliminar tags en bloque a todos los viajes seleccionados.
-- ![](https://img.shields.io/badge/Nuevo-22c55e) **Viajes** - Se ha agregado una lista desplegable para filtrar los viajes según una etiqueta, de forma que pueden filtrar los viajes de alguna de las etiquetas indicadas (sobre todo si es más de una), los viajes que contienen las etiquetas indicadas mostrando también los viajes con más etiquetas de las indicadas, y los viajes que estrictamente tengan las etiquetas indicadas. De esta manera, se podrán filtrar los viajes con mayor granularidad.
-- ![](https://img.shields.io/badge/Nuevo-22c55e) **Viajes** - Los filtros pueden ser ahora expandidos o contraídos si queremos, para ganar espacio en la visualización de la información mostrada para un viaje.
-- ![](https://img.shields.io/badge/Mejora-29568a) **Información** - Se han renombrado los hitos principales dentro del Seguimiento de Fabricación para ser acordes a la información que envía Toyota al comprador y evitar malos entendidos.
-- ![](https://img.shields.io/badge/Mejora-29568a) **Repostajes** - El botón _Gasolineras_ se llama ahora _Mis Gasolineras_, que indica de forma uniquívoca el significado real de la acción detrás de ese botón.
-- ![](https://img.shields.io/badge/Mejora-29568a) **Repostajes** - El botón _Precios de carburantes_ ha sido rediseñado añadiendo un icono y cambiando su color de fondo y texto para hacerlo ligeramente destacable como funcionalidad especial de la aplicación.
-- ![](https://img.shields.io/badge/Mejora-29568a) **Repostajes** - El botón _Actualizar precios_ ha sido rediseñado siguiendo la misma línea de diseño del botón Precios de carburantes para destacarlo dentro de la ventana en la que aparece.
-- ![](https://img.shields.io/badge/Mejora-29568a) **Repostajes** - El botón _Ofertas_ ha sido rediseñado siguiendo la misma línea de diseño del botón _Actualizar precios_ y ha sido reemplazado después del botón _Vista general_.
-- ![](https://img.shields.io/badge/Mejora-29568a) **Repostajes** - El botón _Volver a Repostajes_ ha sido rediseñado para destacarlo ligeramente sobre el resto de botones.
-- ![](https://img.shields.io/badge/Mejora-29568a) **Viajes** - Cuando se cambia la selección de viajes según un filtro, la parte en la que se muestra el detalle del viaje queda en blanco para evitar confusiones.
-- ![](https://img.shields.io/badge/Mejora-29568a) **Viajes** - Mejoras generales en la gestión de tags o etiquetas, y visualización de las mismas.
-- ![](https://img.shields.io/badge/Mejora-29568a) **Viajes** - Al crear una etiqueta o tag, el usuario verá un mensaje de creación correcta, y en el caso de que ya exista, un mensaje informando de esa situación.
+- ![](https://img.shields.io/badge/Toyota-b14dca) En octubre 2026, Toyota ha cambiado la forma de obtener los datos GPS de un viaje. Se ha actualizado la forma en la que se obtenía esa información en la **API de Toyota**
+- ![](https://img.shields.io/badge/Nuevo-22c55e) **Información** - Dentro del apartado **Personalización** hay dos nuevos campos, uno para indicar la _Fecha de pago_, y otro para indicar la fecha de la _Recogida del concesionario_
+- ![](https://img.shields.io/badge/Nuevo-22c55e) <strong>Notas</strong> - Agregada una nueva sección para agregar en formato **Markdown**, anotaciones, documentación o cualquier otra información que consideremos útil y que no queramos perder, y que en los campos de notas y observación de **Coyota** no tengan sentido.
+- ![](https://img.shields.io/badge/Mejora-29568a) **Repostajes** - Dentro de **Precios de Carburantes**, se puede ordenar el listado tanto por _Precio_, como por _Nombre_. La ordenación por nombre se realiza por _Empresa_ y _Dirección_.
+- ![](https://img.shields.io/badge/Mejora-29568a) **Viajes** - Se ha unificado el cálculo de medias e información general con **My Toyota**. En **My Toyota** se produce un redondeo a la cifra más cercana, y en **Coyota** se truncaba. Para evitar posibles malos entendidos entre lo que se muestra en la aplicación oficial y **Coyota**, se ha decidido unificar este criterio. No obstante, hay momentos en los que parece que la aplicación oficial, además de redondear, trunca algunos datos.
+- ![](https://img.shields.io/badge/Mejora-29568a) **Viajes** - Cuando se intentan encontrar viajes _Similares_, por defecto, la opción _Incluir Viajes de Vuelta_ aparecerá activada.
+- ![](https://img.shields.io/badge/Bug-cc5a5a) **Repostajes** - Si en **Precios de carburantes** el usuario había filtrado algún dato y luego pulsaba en _Actualizar precios_, los filtros después de actualizar se perdían. Ahora si los filtros no han cambiado, los mantiene.
 
 
 ## Enlaces que pueden ser de interés
