@@ -4,7 +4,7 @@
 
 ## Histórico de Versiones de Coyota
 
-![Version](https://img.shields.io/badge/Versión%20Actual-1.7.0-cc5a5a)
+![Version](https://img.shields.io/badge/Versión%20Actual-1.7.1-cc5a5a)
 
 - ![](https://img.shields.io/badge/Toyota-b14dca) En octubre 2026, Toyota ha cambiado la forma de obtener los datos GPS de un viaje. Se ha actualizado la forma en la que se obtenía esa información en la **API de Toyota**
 - ![](https://img.shields.io/badge/Nuevo-22c55e) **Información** - Dentro del apartado **Personalización** hay dos nuevos campos, uno para indicar la _Fecha de pago_, y otro para indicar la fecha de la _Recogida del concesionario_
