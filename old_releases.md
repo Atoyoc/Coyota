@@ -4,7 +4,20 @@
 
 ## Histórico de Versiones de Coyota
 
-![Version](https://img.shields.io/badge/Versión%20Actual-1.7.1-cc5a5a)
+![Version](https://img.shields.io/badge/Versión%20Actual-1.8.0-cc5a5a)
+
+- ![](https://img.shields.io/badge/Nuevo-22c55e) **Dashboard** - Se ha creado una sección nueva llamada **Análisis de mi conducción**, para analizar la conducción del conductor con un vehículo. La pantalla **Dashboard** no sufre alteración, pero la nueva sección profundiza sobre los datos del _Panel_ o _Dashboard_, para mostrar información más precisa, detallada, y fácilmente visible con el fin de ayudar a interpretar dónde se debe o puede mejorar
+- ![](https://img.shields.io/badge/Nuevo-22c55e) **Análisis de mi conducción** - Se ha creado una sección _Mapa de comportamientos de conducción_ para mostrar un mapa de calor de los comportamientos a mejorar, los comportamientos positivos, o ambos comportamientos
+- ![](https://img.shields.io/badge/Nuevo-22c55e) **Análisis de mi conducción** - Dentro de la sección _Mapa de comportamientos de conducción_, haciendo zoom en el mapa y seleccionando una zona concreta que tiene comportamientos de conducción, mostrará un listado de viajes relacionados con ese punto del mapa en los que hay datos que pueden ser analizados con el propósito de ser más metódico cuando se circule por esa zona. Cabe destacar que no aparecerán eventos de un viaje individual, sino eventos en diferentes viajes que se han repetido en una zona del mapa aproximada
+- ![](https://img.shields.io/badge/Nuevo-22c55e) **Análisis de mi conducción** - Se ha creado una sección _Consumo, distancia y EV por mes_ para analizar por año seleccionado, en una vista rápida de cuadro de mando, el consumo medio l/100km, el % de conducción en EV, y la cantidad de kms realizados
+- ![](https://img.shields.io/badge/Nuevo-22c55e) **Análisis de mi conducción** - Se ha creado una sección _Repostajes por mes_ para analizar por año seleccionado, en una vista rápida de cuadro de mando, el gasto en €, la cantidad de litros repostados por mes, y el precio medio de la gasolina dentro de ese mes
+- ![](https://img.shields.io/badge/Nuevo-22c55e) **Notas** - Se ha completado el desarrollo completo de la búsqueda de información dentro de los documentos que forman parte de _Notas_
+- ![](https://img.shields.io/badge/Mejora-29568a) **Mapas** - El botón _Vista general_ que había en los mapas de _Repostajes_ y _Precios de carburantes_, y ahora el que aparece con la misma funcionalidad en <em>Análisis de mi conducción</em>, han sido renombrados de _Vista general_ a _Resituar mapa_
+- ![](https://img.shields.io/badge/Bug-cc5a5a) **Notas** - El buscador dentro de **Notas** no estaba funcionando porque la funcionalidad no estaba terminada aún. El mayor error estuvo en que con la urgencia de la publicación de la anterior versión de la aplicación, se dejó visible esa acción, que estaba pendiente de ser cerrada y probada, algo que ya ha podido ser completada en esta versión
+
+---
+
+![Version](https://img.shields.io/badge/Versión-1.7.1-ccaa5a)
 
 - ![](https://img.shields.io/badge/Toyota-b14dca) En octubre 2026, Toyota ha cambiado la forma de obtener los datos GPS de un viaje. Se ha actualizado la forma en la que se obtenía esa información en la **API de Toyota**
 - ![](https://img.shields.io/badge/Nuevo-22c55e) **Información** - Dentro del apartado **Personalización** hay dos nuevos campos, uno para indicar la _Fecha de pago_, y otro para indicar la fecha de la _Recogida del concesionario_
